@@ -576,7 +576,6 @@ a {
   width: 100%;
   height: auto;
   display: block;
-  vertical-align: middle;
 }
 
 /* ===== Benefits list ===== */
@@ -745,6 +744,13 @@ a {
   margin-bottom: var(--space-xl);
 }
 
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
 .cta-section .btn-primary {
   background: #fff;
   color: #000;
@@ -753,6 +759,16 @@ a {
 .cta-section .btn-primary:hover {
   background: #f5f5f7;
   color: #000;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #20bd5a;
+  transform: scale(1.02);
 }
 
 /* ===== Footer ===== */
