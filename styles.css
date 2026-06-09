@@ -813,6 +813,11 @@ a {
     display: none;
   }
 
+  .hero {
+    min-height: auto;
+    padding: calc(72px + var(--space-2xl)) var(--space-sm) var(--space-2xl);
+  }
+
   .hero-ctas {
     flex-direction: column;
   }
@@ -822,11 +827,73 @@ a {
     max-width: 280px;
   }
 
+  .hero-visual {
+    max-width: 430px;
+    margin-top: var(--space-xl);
+  }
+
+  .hero-mockup {
+    aspect-ratio: auto;
+    border-radius: 16px;
+  }
+
+  .mockup-window {
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .mockup-bar {
+    padding: 0.65rem 0.85rem;
+  }
+
+  .mockup-body {
+    flex-direction: column;
+  }
+
+  .mockup-panel {
+    padding: 1rem;
+    gap: 0.65rem;
+  }
+
+  .mockup-divider {
+    width: auto;
+    height: 1px;
+    margin: 0 0.75rem;
+  }
+
+  .mockup-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mockup-card {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.55rem 0.35rem;
+    font-size: 0.68rem;
+  }
+
   .pricing-card-featured {
     transform: none;
   }
 
   .pricing-card-featured:hover {
     transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 2.15rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .mockup-card {
+    font-size: 0.62rem;
   }
 }
