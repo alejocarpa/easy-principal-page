@@ -170,6 +170,7 @@ a {
   gap: var(--space-md);
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   animation: fadeUp 0.8s ease-out 0.3s both;
 }
 
@@ -820,6 +821,8 @@ a {
 
   .hero-ctas {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .hero-ctas .btn {
