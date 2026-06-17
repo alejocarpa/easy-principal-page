@@ -27,4 +27,27 @@
       }
     });
   });
+
+  // Tabs del showcase: EASY Business / EASY School
+  const showcaseTabs = document.querySelectorAll('.showcase-tab');
+  const showcasePanels = document.querySelectorAll('.showcase-panel');
+
+  showcaseTabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      const targetId = 'showcase-' + tab.getAttribute('data-tab');
+
+      showcaseTabs.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      showcasePanels.forEach(function (panel) {
+        const isActive = panel.id === targetId;
+        panel.classList.toggle('active', isActive);
+        panel.hidden = !isActive;
+      });
+    });
+  });
 })();

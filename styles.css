@@ -1,13 +1,32 @@
-/* ===== Variables (estilo Apple: limpio, espaciado, contraste) ===== */
+/* ===== Variables de marca EASY ===== */
 :root {
+  /* Primarios */
+  --color-primary: #9333ea;
+  --color-primary-hover: #7e22ce;
+  --color-primary-light: #c084fc;
+  --color-primary-subtle: #f3e8ff;
+
+  /* Secundarios */
+  --color-secondary: #2563eb;
+  --color-secondary-hover: #1d4ed8;
+  --color-secondary-subtle: #dbeafe;
+
+  /* Neutros */
   --color-bg: #ffffff;
-  --color-bg-dark: #000000;
+  --color-bg-secondary: #f8fafc;
+  --color-card: #ffffff;
+  --color-border: #e5e7eb;
+  --color-divider: #cbd5e1;
+
+  /* Alias semánticos */
+  --color-accent: var(--color-primary);
+  --color-accent-hover: var(--color-primary-hover);
+  --color-bg-dark: #1e1b4b;
   --color-text: #1d1d1f;
-  --color-text-muted: #6e6e73;
-  --color-accent: #0071e3;
-  --color-accent-hover: #0077ed;
-  --color-border: rgba(0, 0, 0, 0.08);
+  --color-text-muted: #64748b;
+
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-logo: "Space Grotesk", var(--font-sans);
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -17,7 +36,7 @@
   --space-3xl: 6rem;
   --radius: 12px;
   --radius-lg: 18px;
-  --shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow: 0 4px 24px rgba(147, 51, 234, 0.08);
   --transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -72,9 +91,11 @@ a {
 }
 
 .nav-logo {
-  font-weight: 600;
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
+  font-family: var(--font-logo);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
 }
 
 .nav-links {
@@ -139,7 +160,10 @@ a {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-primary);
+  background: var(--color-primary-subtle);
+  padding: 0.35rem 0.85rem;
+  border-radius: 980px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: var(--space-sm);
@@ -193,11 +217,11 @@ a {
 .mockup-window {
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: var(--color-card);
   border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-border);
 }
 
 .mockup-bar {
@@ -205,7 +229,7 @@ a {
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
-  background: #f5f5f7;
+  background: var(--color-bg-secondary);
   border-bottom: 1px solid var(--color-border);
   font-size: 0.8125rem;
   font-weight: 500;
@@ -250,11 +274,11 @@ a {
 }
 
 .mockup-negocios {
-  background: linear-gradient(180deg, #f0f7ff 0%, #fff 100%);
+  background: linear-gradient(180deg, var(--color-secondary-subtle) 0%, var(--color-card) 100%);
 }
 
 .mockup-colegios {
-  background: linear-gradient(180deg, #f0fff4 0%, #fff 100%);
+  background: linear-gradient(180deg, var(--color-primary-subtle) 0%, var(--color-card) 100%);
 }
 
 .mockup-divider {
@@ -343,12 +367,12 @@ a {
 
 .btn-outline {
   background: transparent;
-  color: var(--color-text);
-  border: 2px solid var(--color-text);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .btn-outline:hover {
-  background: var(--color-text);
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -361,7 +385,7 @@ a {
 .quote-section {
   padding: var(--space-3xl) var(--space-lg);
   text-align: center;
-  background: #f5f5f7;
+  background: var(--color-primary-subtle);
 }
 
 .quote-text {
@@ -374,7 +398,96 @@ a {
   margin: 0 auto;
 }
 
-/* ===== Sección Dos enfoques (Negocios / Colegios) ===== */
+/* ===== Ecosistema EASY ===== */
+.section-ecosystem {
+  background: var(--color-bg-secondary);
+}
+
+.ecosystem-hub {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.ecosystem-hub-label {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 980px;
+  letter-spacing: 0.02em;
+}
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-md);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ecosystem-card {
+  padding: var(--space-md);
+  background: var(--color-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.ecosystem-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.ecosystem-available {
+  border-top: 3px solid var(--color-secondary);
+}
+
+.ecosystem-school {
+  border-top-color: var(--color-primary);
+}
+
+.ecosystem-coming {
+  opacity: 0.75;
+  background: var(--color-bg-secondary);
+}
+
+.ecosystem-coming:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.ecosystem-status {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+  color: var(--color-secondary);
+}
+
+.ecosystem-coming .ecosystem-status {
+  color: var(--color-text-muted);
+}
+
+.ecosystem-school .ecosystem-status {
+  color: var(--color-primary);
+}
+
+.ecosystem-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.ecosystem-card p {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+/* ===== Sección Soluciones (Negocios / Colegios) ===== */
 .section-enfoques {
   padding: var(--space-3xl) var(--space-lg);
   background: #fff;
@@ -394,7 +507,7 @@ a {
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: #fafafa;
+  background: var(--color-card);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
@@ -404,15 +517,29 @@ a {
 }
 
 .enfoque-negocios {
-  border-top: 4px solid var(--color-accent);
+  border-top: 4px solid var(--color-secondary);
 }
 
 .enfoque-colegios {
-  border-top: 4px solid #34c759;
+  border-top: 4px solid var(--color-primary);
 }
 
 .enfoque-header {
   margin-bottom: var(--space-lg);
+}
+
+.enfoque-tag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.enfoque-tag-school {
+  color: var(--color-primary);
 }
 
 .enfoque-icon {
@@ -508,9 +635,14 @@ a {
   margin-top: var(--space-xl);
 }
 
+.features-grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .feature-card {
   padding: var(--space-xl);
-  background: #f5f5f7;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
   transition: transform var(--transition), box-shadow var(--transition);
 }
@@ -560,23 +692,155 @@ a {
   color: var(--color-text-muted);
 }
 
+.showcase-tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.showcase-tab {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1px solid var(--color-border);
+  border-radius: 980px;
+  background: var(--color-card);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.showcase-tab:hover {
+  border-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.showcase-tab.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
 .showcase-image {
   max-width: 900px;
-  margin: 0 auto;
+  margin: var(--space-xl) auto 0;
+}
+
+.showcase-panel {
+  display: none;
+}
+
+.showcase-panel.active {
+  display: block;
+  animation: fadeUp 0.4s ease-out;
 }
 
 .showcase-mockup {
   width: 100%;
   border-radius: var(--radius-lg);
-  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 32px 64px rgba(147, 51, 234, 0.12);
   overflow: hidden;
-  background: #f5f5f7;
+  background: var(--color-bg-secondary);
 }
 
 .showcase-screenshot {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Vista previa EASY School (hasta tener captura real) */
+.showcase-mockup-school {
+  background: linear-gradient(160deg, #4c1d95 0%, #6b21a8 100%);
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.school-preview {
+  width: 100%;
+  max-width: 640px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  color: #f5f5f7;
+}
+
+.school-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.school-preview-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-primary-subtle);
+  background: rgba(147, 51, 234, 0.35);
+  padding: 0.25rem 0.6rem;
+  border-radius: 980px;
+}
+
+.school-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.school-preview-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.school-preview-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.school-preview-card span:last-child {
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.school-preview-table {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.school-preview-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.school-preview-row:last-child {
+  border-bottom: none;
+}
+
+.school-preview-row.header {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 /* ===== Benefits list ===== */
@@ -589,7 +853,7 @@ a {
   display: flex;
   gap: var(--space-lg);
   padding: var(--space-lg) 0;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-divider);
 }
 
 .benefit-item:last-child {
@@ -599,8 +863,8 @@ a {
 .benefit-number {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-accent);
-  opacity: 0.8;
+  color: var(--color-primary);
+  opacity: 0.85;
   line-height: 1;
 }
 
@@ -617,7 +881,7 @@ a {
 
 /* ===== Pricing ===== */
 .section-pricing {
-  background: #f5f5f7;
+  background: var(--color-bg-secondary);
 }
 
 .pricing-grid {
@@ -629,9 +893,10 @@ a {
 }
 
 .pricing-card {
-  background: #fff;
+  background: var(--color-card);
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -641,11 +906,11 @@ a {
 
 .pricing-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 40px rgba(147, 51, 234, 0.12);
 }
 
 .pricing-card-featured {
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-primary);
   transform: scale(1.02);
 }
 
@@ -658,7 +923,7 @@ a {
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -758,8 +1023,8 @@ a {
 }
 
 .cta-section .btn-primary:hover {
-  background: #f5f5f7;
-  color: #000;
+  background: var(--color-primary-subtle);
+  color: var(--color-primary-hover);
 }
 
 .btn-whatsapp {
@@ -776,7 +1041,7 @@ a {
 .footer {
   padding: var(--space-lg) var(--space-lg);
   border-top: 1px solid var(--color-border);
-  background: #f5f5f7;
+  background: var(--color-bg-secondary);
 }
 
 .footer-inner {
@@ -898,5 +1163,13 @@ a {
 
   .mockup-card {
     font-size: 0.62rem;
+  }
+
+  .school-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
