@@ -963,6 +963,41 @@ a {
   font-weight: 600;
 }
 
+.price-annual {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding: 0.75rem 1rem;
+  background: var(--color-secondary-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.price-annual strong {
+  color: var(--color-secondary);
+}
+
+.price-annual-badge {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.price-annual-school {
+  background: var(--color-primary-subtle);
+}
+
+.price-annual-school .price-annual-badge,
+.price-annual-school strong {
+  color: var(--color-primary);
+}
+
 .price-desc {
   color: var(--color-text-muted);
   font-size: 0.9375rem;
