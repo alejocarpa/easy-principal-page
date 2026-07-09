@@ -3,18 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EASY es una plataforma de gestión modular para PYMES y organizaciones. Centraliza procesos, automatiza tareas y toma mejores decisiones. EASY Business y EASY School disponibles.">
-  <title>EASY — Gestionar nunca fue tan fácil.</title>
+  <title>EASY Platform | ERP, gestión escolar y POS para PYMES</title>
+  <meta name="description" content="EASY Platform: software modular para PYMES y colegios en Colombia. ERP con inventario, cartera y facturas PDF, gestión académica y punto de venta. Empieza con un módulo y escala.">
+  <meta name="keywords" content="ERP PYMES, software inventario, gestión escolar, punto de venta, facturas PDF, cuentas por cobrar, EASY Business, EASY School, EASY POS, Colombia">
+  <meta name="author" content="EASY Platform">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://proyectoeasy.net/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="EASY Platform">
+  <meta property="og:title" content="EASY Platform | ERP, gestión escolar y POS para PYMES">
+  <meta property="og:description" content="Centraliza clientes, inventario, ventas, cartera, notas escolares y punto de venta en una plataforma modular. Soporte en español.">
+  <meta property="og:url" content="https://proyectoeasy.net/">
+  <meta property="og:image" content="https://proyectoeasy.net/assets/showcase-dashboard.png">
+  <meta property="og:image:alt" content="Panel de EASY Business con ventas, recaudo, cartera y tendencias">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EASY Platform | ERP, gestión escolar y POS para PYMES">
+  <meta name="twitter:description" content="Software modular para PYMES y colegios. ERP, gestión académica y punto de venta en un solo ecosistema.">
+  <meta name="twitter:image" content="https://proyectoeasy.net/assets/showcase-dashboard.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://proyectoeasy.net/#organization",
+        "name": "EASY Platform",
+        "url": "https://proyectoeasy.net/",
+        "logo": "https://proyectoeasy.net/assets/logo_horizontal.png",
+        "email": "email.proyectoeasy@gmail.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "email.proyectoeasy@gmail.com",
+          "availableLanguage": "Spanish"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://proyectoeasy.net/#website",
+        "url": "https://proyectoeasy.net/",
+        "name": "EASY Platform",
+        "description": "Plataforma de gestión modular para PYMES y organizaciones educativas.",
+        "publisher": { "@id": "https://proyectoeasy.net/#organization" },
+        "inLanguage": "es"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://proyectoeasy.net/#easy-business",
+        "name": "EASY Business",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "ERP",
+        "operatingSystem": "Web",
+        "url": "https://proyectoeasy.net/easy-business/",
+        "description": "ERP para PYMES con clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes.",
+        "offers": {
+          "@type": "Offer",
+          "price": "70000",
+          "priceCurrency": "COP",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "70000",
+            "priceCurrency": "COP",
+            "unitText": "mes"
+          }
+        },
+        "provider": { "@id": "https://proyectoeasy.net/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://proyectoeasy.net/#easy-school",
+        "name": "EASY School",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "url": "https://proyectoeasy.net/easy-school/",
+        "description": "Sistema de gestión académica con alumnos, profesores, notas y boletines.",
+        "offers": {
+          "@type": "Offer",
+          "price": "100000",
+          "priceCurrency": "COP",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "100000",
+            "priceCurrency": "COP",
+            "unitText": "mes"
+          }
+        },
+        "provider": { "@id": "https://proyectoeasy.net/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://proyectoeasy.net/#easy-pos",
+        "name": "EASY POS",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Point of Sale",
+        "operatingSystem": "Web",
+        "url": "https://proyectoeasy.net/easy-pos/",
+        "description": "Punto de venta con historial de turnos para negocios.",
+        "provider": { "@id": "https://proyectoeasy.net/#organization" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Navegación -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">
+      <a href="/" class="nav-logo">
         <img src="assets/logo_horizontal.png" alt="EASY" class="nav-logo-img" width="120" height="32" />
       </a>
       <ul class="nav-links">
@@ -57,6 +163,7 @@
                 <div class="mockup-card"><span class="mockup-card-icon">👤</span><span>Clientes</span></div>
                 <div class="mockup-card"><span class="mockup-card-icon">📦</span><span>Inventario</span></div>
                 <div class="mockup-card"><span class="mockup-card-icon">💳</span><span>Cartera</span></div>
+                <div class="mockup-card"><span class="mockup-card-icon">🛒</span><span>POS</span></div>
               </div>
             </div>
             <div class="mockup-divider"></div>
@@ -85,12 +192,12 @@
       <div class="ecosystem-grid">
         <article class="ecosystem-card ecosystem-available">
           <span class="ecosystem-status">Disponible</span>
-          <h3>EASY Business</h3>
+          <h3><a href="easy-business/">EASY Business</a></h3>
           <p>ERP para PYMES con gestión de cartera</p>
         </article>
         <article class="ecosystem-card ecosystem-available ecosystem-school">
           <span class="ecosystem-status">Disponible</span>
-          <h3>EASY School</h3>
+          <h3><a href="easy-school/">EASY School</a></h3>
           <p>Gestión académica</p>
         </article>
         <article class="ecosystem-card ecosystem-coming">
@@ -108,10 +215,10 @@
           <h3>EASY Payroll</h3>
           <p>Nómina</p>
         </article>
-        <article class="ecosystem-card ecosystem-coming">
-          <span class="ecosystem-status">Próximamente</span>
-          <h3>EASY POS</h3>
-          <p>Punto de venta</p>
+        <article class="ecosystem-card ecosystem-available ecosystem-pos">
+          <span class="ecosystem-status">Disponible</span>
+          <h3><a href="easy-pos/">EASY POS</a></h3>
+          <p>Punto de venta y turnos</p>
         </article>
         <article class="ecosystem-card ecosystem-coming">
           <span class="ecosystem-status">Próximamente</span>
@@ -144,12 +251,14 @@
             <li><strong>Clientes</strong> — Ficha de cada cliente, historial y seguimiento</li>
             <li><strong>Productos</strong> — Catálogo, precios y categorías</li>
             <li><strong>Pedidos</strong> — Registro y seguimiento de pedidos</li>
+            <li><strong>Facturas PDF</strong> — Generación de facturas en PDF listas para impresión</li>
             <li><strong>Cartera</strong> — Cuentas por cobrar, seguimiento de pagos y cartera vencida</li>
             <li><strong>Inventario</strong> — Stock, entradas, salidas y alertas</li>
             <li><strong>Proveedores</strong> — Gestión de proveedores y compras</li>
             <li><strong>Informes de ventas</strong> — Reportes y tendencias de ventas</li>
             <li><strong>Informes de inventario</strong> — Análisis de stock y movimientos</li>
           </ul>
+          <a href="easy-business/" class="module-related-link">Conocer EASY Business →</a>
         </article>
         <article class="enfoque-card enfoque-colegios">
           <div class="enfoque-header">
@@ -164,6 +273,20 @@
             <li><strong>Notas</strong> — Carga de calificaciones por período y materia</li>
             <li><strong>Boletines</strong> — Generación de boletines e informes por alumno</li>
           </ul>
+          <a href="easy-school/" class="module-related-link">Conocer EASY School →</a>
+        </article>
+        <article class="enfoque-card enfoque-pos">
+          <div class="enfoque-header">
+            <span class="enfoque-tag enfoque-tag-pos">Disponible</span>
+            <span class="enfoque-icon">🛒</span>
+            <h3>EASY POS</h3>
+            <p>Punto de venta para tu negocio. Cobra en mostrador y controla cada turno de caja con claridad.</p>
+          </div>
+          <ul class="enfoque-features">
+            <li><strong>Punto de venta</strong> — Registra ventas, aplica descuentos y cobra de forma rápida</li>
+            <li><strong>Historial de turnos</strong> — Consulta aperturas, cierres y movimientos por turno</li>
+          </ul>
+          <a href="easy-pos/" class="module-related-link">Conocer EASY POS →</a>
         </article>
       </div>
     </div>
@@ -207,7 +330,7 @@
   <section class="showcase">
     <div class="showcase-content">
       <h2 class="showcase-title">La misma experiencia, adaptada a tu sector</h2>
-      <p class="showcase-subtitle">Interfaz clara e intuitiva en EASY Business y EASY School. Sin curvas de aprendizaje largas.</p>
+      <p class="showcase-subtitle">Interfaz clara e intuitiva en EASY Business, EASY School y EASY POS. Sin curvas de aprendizaje largas.</p>
       <div class="showcase-tabs" role="tablist">
         <button type="button" class="showcase-tab active" role="tab" aria-selected="true" data-tab="business">EASY Business</button>
         <button type="button" class="showcase-tab" role="tab" aria-selected="false" data-tab="school">EASY School</button>
@@ -243,7 +366,7 @@
           <span class="benefit-number">02</span>
           <div>
             <h3>Crece contigo</h3>
-            <p>Empieza con EASY Business o EASY School y suma nuevos módulos del ecosistema cuando lo necesites.</p>
+            <p>Empieza con EASY Business, EASY School o EASY POS y suma nuevos módulos del ecosistema cuando lo necesites.</p>
           </div>
         </div>
         <div class="benefit-item">
@@ -268,7 +391,7 @@
   <section class="section section-pricing" id="precios">
     <div class="section-content">
       <h2 class="section-title">Elige tu solución</h2>
-      <p class="section-desc">Planes según el módulo que necesites: EASY Business, EASY School o ambos en EASY Platform.</p>
+      <p class="section-desc">Planes según el módulo que necesites: EASY Business, EASY School, EASY POS o el ecosistema completo en EASY Platform.</p>
       <div class="pricing-grid">
         <div class="pricing-card">
           <h3>EASY Business</h3>
@@ -279,9 +402,10 @@
             <span class="price-annual-badge">Ahorra pagando el año</span>
             Paga <strong>$600.000 al año</strong> y el mes te sale a <strong>$50.000</strong>
           </p>
-          <p class="price-desc">ERP para PYMES: clientes, productos, pedidos, inventario, cartera, proveedores e informes</p>
+          <p class="price-desc">ERP para PYMES: clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes</p>
           <ul class="price-features">
             <li>Módulo completo para negocios</li>
+            <li>Facturas en PDF listas para impresión</li>
             <li>Gestión de cartera y cuentas por cobrar</li>
             <li>Informes de ventas e inventario</li>
             <li>Soporte en español</li>
@@ -295,15 +419,38 @@
           <div class="price">
             <span class="price-custom">Personalizado</span>
           </div>
-          <p class="price-desc">EASY Business + EASY School en una sola plataforma</p>
+          <p class="price-desc">Arma tu plataforma combinando los módulos que necesitas hoy y suma nuevos sin cambiar de sistema.</p>
+          <div class="platform-modules">
+            <div class="platform-modules-hub">
+              <span class="platform-modules-hub-label">EASY Platform</span>
+            </div>
+            <div class="platform-modules-group">
+              <p class="platform-modules-label">Disponibles ahora</p>
+              <div class="platform-modules-chips">
+                <span class="platform-chip platform-chip-business">Business</span>
+                <span class="platform-chip platform-chip-school">School</span>
+                <span class="platform-chip platform-chip-pos">POS</span>
+              </div>
+            </div>
+            <div class="platform-modules-group">
+              <p class="platform-modules-label platform-modules-label-soon">En el roadmap</p>
+              <div class="platform-modules-chips platform-modules-chips-soon">
+                <span class="platform-chip platform-chip-soon">CRM</span>
+                <span class="platform-chip platform-chip-soon">HR</span>
+                <span class="platform-chip platform-chip-soon">Payroll</span>
+                <span class="platform-chip platform-chip-soon">BI</span>
+                <span class="platform-chip platform-chip-soon">Mobile</span>
+              </div>
+            </div>
+          </div>
           <ul class="price-features">
-            <li>Ambas soluciones incluidas</li>
-            <li>Ideal para organizaciones con negocio y colegio</li>
-            <li>Soporte prioritario</li>
+            <li>Combina Business, School y POS según tu operación</li>
+            <li>Usuarios, datos e informes en un solo lugar</li>
+            <li>Soporte prioritario y capacitación incluida</li>
+            <li>Acceso anticipado a nuevos módulos del ecosistema</li>
             <li>Actualizaciones incluidas</li>
-            <li>Capacitación incluida</li>
           </ul>
-          <a href="#contacto" class="btn btn-primary">Consultar</a>
+          <a href="#contacto" class="btn btn-primary">Contratar</a>
         </div>
         <div class="pricing-card">
           <h3>EASY School</h3>
@@ -331,7 +478,7 @@
   <section class="cta-section" id="contacto">
     <div class="cta-content">
       <h2>¿Listo para empezar?</h2>
-      <p>Cuéntanos si necesitas EASY Business, EASY School o el ecosistema completo. Te enviamos precios y una demo.</p>
+      <p>Cuéntanos si necesitas EASY Business, EASY School, EASY POS o el ecosistema completo. Te enviamos precios y una demo.</p>
       <div class="cta-actions">
         <a href="mailto:email.proyectoeasy@gmail.com" class="btn btn-primary btn-large">Contactar ventas</a>
         <a href="https://wa.me/573117741004?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20EASY" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-large">Escribir por WhatsApp</a>
@@ -342,7 +489,14 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <p class="footer-copy">© 2026 EASY Platform. Gestionar nunca fue tan fácil.</p>
+      <div>
+        <p class="footer-copy">© 2026 EASY Platform. Gestionar nunca fue tan fácil.</p>
+        <nav class="footer-modules" aria-label="Módulos">
+          <a href="easy-business/">EASY Business</a>
+          <a href="easy-school/">EASY School</a>
+          <a href="easy-pos/">EASY POS</a>
+        </nav>
+      </div>
       <div class="footer-links">
         <a href="#">Privacidad</a>
         <a href="#">Términos</a>
