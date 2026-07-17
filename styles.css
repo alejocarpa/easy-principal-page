@@ -617,6 +617,10 @@ a {
   margin: 0 auto;
 }
 
+.section-content:has(.easy-carousel) {
+  max-width: 1120px;
+}
+
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
@@ -1446,6 +1450,186 @@ a {
 .module-pricing-inner {
   max-width: 520px;
   margin: 0 auto;
+}
+
+.module-pricing-inner-wide {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.school-pricing-block {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-3xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.school-pricing-block .section-title {
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.school-plans-grid {
+  margin-top: var(--space-lg);
+}
+
+.easy-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.easy-carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-md);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: var(--space-md) 0.25rem var(--space-lg);
+  flex: 1;
+  min-width: 0;
+}
+
+.easy-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.easy-carousel-track > .pricing-card,
+.easy-carousel-track > .enfoque-card,
+.easy-carousel-track > .feature-card {
+  flex: 0 0 calc((100% - (2 * var(--space-md))) / 3);
+  max-width: none;
+  scroll-snap-align: start;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.easy-carousel-track > .enfoque-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.easy-carousel-track > .enfoque-card .module-related-link {
+  margin-top: auto;
+  padding-top: var(--space-md);
+}
+
+.easy-carousel-track > .pricing-card-featured {
+  transform: none;
+}
+
+.easy-carousel-track > .pricing-card-featured:hover {
+  transform: translateY(-4px);
+}
+
+.easy-carousel-nav {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  color: var(--color-primary);
+  font-size: 1.75rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background var(--transition), border-color var(--transition), opacity var(--transition);
+}
+
+.easy-carousel-nav:hover:not(:disabled) {
+  background: var(--color-primary-subtle);
+  border-color: var(--color-primary);
+}
+
+.easy-carousel-nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.section-dark .easy-carousel-nav {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.section-dark .easy-carousel-nav:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 900px) {
+  .easy-carousel-track > .pricing-card,
+  .easy-carousel-track > .enfoque-card,
+  .easy-carousel-track > .feature-card {
+    flex-basis: calc((100% - var(--space-md)) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .easy-carousel {
+    gap: 0.35rem;
+  }
+
+  .easy-carousel-nav {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.5rem;
+  }
+
+  .easy-carousel-track > .pricing-card,
+  .easy-carousel-track > .enfoque-card,
+  .easy-carousel-track > .feature-card {
+    flex-basis: 100%;
+  }
+}
+
+.school-pricing-extras {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.school-pricing-extras h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.school-pricing-extras ul {
+  list-style: none;
+}
+
+.school-pricing-extras li {
+  padding: var(--space-xs) 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.school-pricing-extras li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.school-pricing-extras li strong {
+  color: var(--color-text);
 }
 
 .module-pricing-card {

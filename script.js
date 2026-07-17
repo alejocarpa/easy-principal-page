@@ -50,4 +50,40 @@
       });
     });
   });
+
+  // Carruseles horizontales (soluciones, precios, planes)
+  document.querySelectorAll('[data-easy-carousel]').forEach(function (carousel) {
+    const track = carousel.querySelector('[data-easy-carousel-track]');
+    const prevBtn = carousel.querySelector('[data-easy-carousel-prev]');
+    const nextBtn = carousel.querySelector('[data-easy-carousel-next]');
+    if (!track || !prevBtn || !nextBtn) return;
+
+    function getStep() {
+      const item = track.children[0];
+      if (!item) return track.clientWidth;
+      const styles = window.getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+      return item.getBoundingClientRect().width + gap;
+    }
+
+    function updateNav() {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      prevBtn.disabled = track.scrollLeft <= 2;
+      nextBtn.disabled = track.scrollLeft >= maxScroll - 2;
+    }
+
+    function scrollByStep(direction) {
+      track.scrollBy({ left: direction * getStep(), behavior: 'smooth' });
+    }
+
+    prevBtn.addEventListener('click', function () {
+      scrollByStep(-1);
+    });
+    nextBtn.addEventListener('click', function () {
+      scrollByStep(1);
+    });
+    track.addEventListener('scroll', updateNav, { passive: true });
+    window.addEventListener('resize', updateNav);
+    updateNav();
+  });
 })();

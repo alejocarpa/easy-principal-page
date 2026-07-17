@@ -89,15 +89,11 @@
         "url": "https://proyectoeasy.net/easy-school/",
         "description": "Sistema de gestión académica con alumnos, profesores, notas y boletines.",
         "offers": {
-          "@type": "Offer",
-          "price": "100000",
+          "@type": "AggregateOffer",
+          "lowPrice": "99000",
+          "highPrice": "349000",
           "priceCurrency": "COP",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "100000",
-            "priceCurrency": "COP",
-            "unitText": "mes"
-          }
+          "offerCount": "4"
         },
         "provider": { "@id": "https://proyectoeasy.net/#organization" }
       },
@@ -239,55 +235,63 @@
     <div class="section-content">
       <h2 class="section-title">Soluciones del ecosistema</h2>
       <p class="section-desc">Cada solución está diseñada para las necesidades específicas de un sector, con una experiencia simple e intuitiva.</p>
-      <div class="enfoques-grid">
-        <article class="enfoque-card enfoque-negocios">
-          <div class="enfoque-header">
-            <span class="enfoque-tag">Disponible</span>
-            <span class="enfoque-icon">🏪</span>
-            <h3>EASY Business</h3>
-            <p>ERP para PYMES. Centraliza clientes, inventario, ventas, cartera y proveedores en un solo sistema.</p>
-          </div>
-          <ul class="enfoque-features">
-            <li><strong>Clientes</strong> — Ficha de cada cliente, historial y seguimiento</li>
-            <li><strong>Productos</strong> — Catálogo, precios y categorías</li>
-            <li><strong>Pedidos</strong> — Registro y seguimiento de pedidos</li>
-            <li><strong>Facturas PDF</strong> — Generación de facturas en PDF listas para impresión</li>
-            <li><strong>Cartera</strong> — Cuentas por cobrar, seguimiento de pagos y cartera vencida</li>
-            <li><strong>Inventario</strong> — Stock, entradas, salidas y alertas</li>
-            <li><strong>Proveedores</strong> — Gestión de proveedores y compras</li>
-            <li><strong>Informes de ventas</strong> — Reportes y tendencias de ventas</li>
-            <li><strong>Informes de inventario</strong> — Análisis de stock y movimientos</li>
-          </ul>
-          <a href="easy-business/" class="module-related-link">Conocer EASY Business →</a>
-        </article>
-        <article class="enfoque-card enfoque-colegios">
-          <div class="enfoque-header">
-            <span class="enfoque-tag enfoque-tag-school">Disponible</span>
-            <span class="enfoque-icon">🎓</span>
-            <h3>EASY School</h3>
-            <p>Gestión académica. Administra alumnos, profesores y resultados con claridad.</p>
-          </div>
-          <ul class="enfoque-features">
-            <li><strong>Alumnos</strong> — Matrícula, datos y seguimiento por curso</li>
-            <li><strong>Profesores</strong> — Plantilla docente y asignación de materias</li>
-            <li><strong>Notas</strong> — Carga de calificaciones por período y materia</li>
-            <li><strong>Boletines</strong> — Generación de boletines e informes por alumno</li>
-          </ul>
-          <a href="easy-school/" class="module-related-link">Conocer EASY School →</a>
-        </article>
-        <article class="enfoque-card enfoque-pos">
-          <div class="enfoque-header">
-            <span class="enfoque-tag enfoque-tag-pos">Disponible</span>
-            <span class="enfoque-icon">🛒</span>
-            <h3>EASY POS</h3>
-            <p>Punto de venta para tu negocio. Cobra en mostrador y controla cada turno de caja con claridad.</p>
-          </div>
-          <ul class="enfoque-features">
-            <li><strong>Punto de venta</strong> — Registra ventas, aplica descuentos y cobra de forma rápida</li>
-            <li><strong>Historial de turnos</strong> — Consulta aperturas, cierres y movimientos por turno</li>
-          </ul>
-          <a href="easy-pos/" class="module-related-link">Conocer EASY POS →</a>
-        </article>
+      <div class="easy-carousel" data-easy-carousel>
+        <button type="button" class="easy-carousel-nav" aria-label="Solución anterior" data-easy-carousel-prev>
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Soluciones del ecosistema">
+          <article class="enfoque-card enfoque-negocios">
+            <div class="enfoque-header">
+              <span class="enfoque-tag">Disponible</span>
+              <span class="enfoque-icon">🏪</span>
+              <h3>EASY Business</h3>
+              <p>ERP para PYMES. Centraliza clientes, inventario, ventas, cartera y proveedores en un solo sistema.</p>
+            </div>
+            <ul class="enfoque-features">
+              <li><strong>Clientes</strong> — Ficha de cada cliente, historial y seguimiento</li>
+              <li><strong>Productos</strong> — Catálogo, precios y categorías</li>
+              <li><strong>Pedidos</strong> — Registro y seguimiento de pedidos</li>
+              <li><strong>Facturas PDF</strong> — Generación de facturas en PDF listas para impresión</li>
+              <li><strong>Cartera</strong> — Cuentas por cobrar, seguimiento de pagos y cartera vencida</li>
+              <li><strong>Inventario</strong> — Stock, entradas, salidas y alertas</li>
+              <li><strong>Proveedores</strong> — Gestión de proveedores y compras</li>
+              <li><strong>Informes de ventas</strong> — Reportes y tendencias de ventas</li>
+              <li><strong>Informes de inventario</strong> — Análisis de stock y movimientos</li>
+            </ul>
+            <a href="easy-business/" class="module-related-link">Conocer EASY Business →</a>
+          </article>
+          <article class="enfoque-card enfoque-colegios">
+            <div class="enfoque-header">
+              <span class="enfoque-tag enfoque-tag-school">Disponible</span>
+              <span class="enfoque-icon">🎓</span>
+              <h3>EASY School</h3>
+              <p>Gestión académica. Administra alumnos, profesores y resultados con claridad.</p>
+            </div>
+            <ul class="enfoque-features">
+              <li><strong>Alumnos</strong> — Matrícula, datos y seguimiento por curso</li>
+              <li><strong>Profesores</strong> — Plantilla docente y asignación de materias</li>
+              <li><strong>Notas</strong> — Carga de calificaciones por período y materia</li>
+              <li><strong>Boletines</strong> — Generación de boletines e informes por alumno</li>
+            </ul>
+            <a href="easy-school/" class="module-related-link">Conocer EASY School →</a>
+          </article>
+          <article class="enfoque-card enfoque-pos">
+            <div class="enfoque-header">
+              <span class="enfoque-tag enfoque-tag-pos">Disponible</span>
+              <span class="enfoque-icon">🛒</span>
+              <h3>EASY POS</h3>
+              <p>Punto de venta para tu negocio. Cobra en mostrador y controla cada turno de caja con claridad.</p>
+            </div>
+            <ul class="enfoque-features">
+              <li><strong>Punto de venta</strong> — Registra ventas, aplica descuentos y cobra de forma rápida</li>
+              <li><strong>Historial de turnos</strong> — Consulta aperturas, cierres y movimientos por turno</li>
+            </ul>
+            <a href="easy-pos/" class="module-related-link">Conocer EASY POS →</a>
+          </article>
+        </div>
+        <button type="button" class="easy-carousel-nav" aria-label="Solución siguiente" data-easy-carousel-next>
+          <span aria-hidden="true">›</span>
+        </button>
       </div>
     </div>
   </section>
@@ -301,27 +305,35 @@
   <section class="section section-dark" id="caracteristicas">
     <div class="section-content">
       <h2 class="section-title">Una plataforma pensada para crecer contigo</h2>
-      <div class="features-grid features-grid-4">
-        <article class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h3>Centralizar procesos</h3>
-          <p>Operación, datos e informes en un solo lugar. Menos herramientas dispersas, más control.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-icon">⚙️</div>
-          <h3>Automatizar tareas</h3>
-          <p>Reduce el trabajo manual y gana tiempo en lo que realmente importa para tu organización.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-icon">📈</div>
-          <h3>Mejores decisiones</h3>
-          <p>Informes y dashboards en tiempo real para entender tu negocio o institución.</p>
-        </article>
-        <article class="feature-card">
-          <div class="feature-icon">🔀</div>
-          <h3>Modular y escalable</h3>
-          <p>Empieza con un módulo y crece con el ecosistema EASY según evolucionen tus necesidades.</p>
-        </article>
+      <div class="easy-carousel" data-easy-carousel>
+        <button type="button" class="easy-carousel-nav" aria-label="Característica anterior" data-easy-carousel-prev>
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Pilares de la plataforma">
+          <article class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Centralizar procesos</h3>
+            <p>Operación, datos e informes en un solo lugar. Menos herramientas dispersas, más control.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3>Automatizar tareas</h3>
+            <p>Reduce el trabajo manual y gana tiempo en lo que realmente importa para tu organización.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Mejores decisiones</h3>
+            <p>Informes y dashboards en tiempo real para entender tu negocio o institución.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🔀</div>
+            <h3>Modular y escalable</h3>
+            <p>Empieza con un módulo y crece con el ecosistema EASY según evolucionen tus necesidades.</p>
+          </article>
+        </div>
+        <button type="button" class="easy-carousel-nav" aria-label="Característica siguiente" data-easy-carousel-next>
+          <span aria-hidden="true">›</span>
+        </button>
       </div>
     </div>
   </section>
@@ -392,83 +404,178 @@
     <div class="section-content">
       <h2 class="section-title">Elige tu solución</h2>
       <p class="section-desc">Planes según el módulo que necesites: EASY Business, EASY School, EASY POS o el ecosistema completo en EASY Platform.</p>
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>EASY Business</h3>
-          <div class="price">
-            <span class="price-custom">$70.000 / mes</span>
-          </div>
-          <p class="price-annual">
-            <span class="price-annual-badge">Ahorra pagando el año</span>
-            Paga <strong>$600.000 al año</strong> y el mes te sale a <strong>$50.000</strong>
-          </p>
-          <p class="price-desc">ERP para PYMES: clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes</p>
-          <ul class="price-features">
-            <li>Módulo completo para negocios</li>
-            <li>Facturas en PDF listas para impresión</li>
-            <li>Gestión de cartera y cuentas por cobrar</li>
-            <li>Informes de ventas e inventario</li>
-            <li>Soporte en español</li>
-            <li>Actualizaciones incluidas</li>
-          </ul>
-          <a href="#contacto" class="btn btn-outline">Consultar</a>
-        </div>
-        <div class="pricing-card pricing-card-featured">
-          <span class="badge">Recomendado</span>
-          <h3>EASY Platform</h3>
-          <div class="price">
-            <span class="price-custom">Personalizado</span>
-          </div>
-          <p class="price-desc">Arma tu plataforma combinando los módulos que necesitas hoy y suma nuevos sin cambiar de sistema.</p>
-          <div class="platform-modules">
-            <div class="platform-modules-hub">
-              <span class="platform-modules-hub-label">EASY Platform</span>
+      <div class="easy-carousel" data-easy-carousel>
+        <button type="button" class="easy-carousel-nav" aria-label="Solución anterior" data-easy-carousel-prev>
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Elige tu solución">
+          <div class="pricing-card">
+            <h3>EASY Business</h3>
+            <div class="price">
+              <span class="price-custom">$70.000 / mes</span>
             </div>
-            <div class="platform-modules-group">
-              <p class="platform-modules-label">Disponibles ahora</p>
-              <div class="platform-modules-chips">
-                <span class="platform-chip platform-chip-business">Business</span>
-                <span class="platform-chip platform-chip-school">School</span>
-                <span class="platform-chip platform-chip-pos">POS</span>
+            <p class="price-annual">
+              <span class="price-annual-badge">Ahorra pagando el año</span>
+              Paga <strong>$600.000 al año</strong> y el mes te sale a <strong>$50.000</strong>
+            </p>
+            <p class="price-desc">ERP para PYMES: clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes</p>
+            <ul class="price-features">
+              <li>Módulo completo para negocios</li>
+              <li>Facturas en PDF listas para impresión</li>
+              <li>Gestión de cartera y cuentas por cobrar</li>
+              <li>Informes de ventas e inventario</li>
+              <li>Soporte en español</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline">Consultar</a>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <span class="badge">Recomendado</span>
+            <h3>EASY Platform</h3>
+            <div class="price">
+              <span class="price-custom">Personalizado</span>
+            </div>
+            <p class="price-desc">Arma tu plataforma combinando los módulos que necesitas hoy y suma nuevos sin cambiar de sistema.</p>
+            <div class="platform-modules">
+              <div class="platform-modules-hub">
+                <span class="platform-modules-hub-label">EASY Platform</span>
+              </div>
+              <div class="platform-modules-group">
+                <p class="platform-modules-label">Disponibles ahora</p>
+                <div class="platform-modules-chips">
+                  <span class="platform-chip platform-chip-business">Business</span>
+                  <span class="platform-chip platform-chip-school">School</span>
+                  <span class="platform-chip platform-chip-pos">POS</span>
+                </div>
+              </div>
+              <div class="platform-modules-group">
+                <p class="platform-modules-label platform-modules-label-soon">En el roadmap</p>
+                <div class="platform-modules-chips platform-modules-chips-soon">
+                  <span class="platform-chip platform-chip-soon">CRM</span>
+                  <span class="platform-chip platform-chip-soon">HR</span>
+                  <span class="platform-chip platform-chip-soon">Payroll</span>
+                  <span class="platform-chip platform-chip-soon">BI</span>
+                  <span class="platform-chip platform-chip-soon">Mobile</span>
+                </div>
               </div>
             </div>
-            <div class="platform-modules-group">
-              <p class="platform-modules-label platform-modules-label-soon">En el roadmap</p>
-              <div class="platform-modules-chips platform-modules-chips-soon">
-                <span class="platform-chip platform-chip-soon">CRM</span>
-                <span class="platform-chip platform-chip-soon">HR</span>
-                <span class="platform-chip platform-chip-soon">Payroll</span>
-                <span class="platform-chip platform-chip-soon">BI</span>
-                <span class="platform-chip platform-chip-soon">Mobile</span>
+            <ul class="price-features">
+              <li>Combina Business, School y POS según tu operación</li>
+              <li>Usuarios, datos e informes en un solo lugar</li>
+              <li>Soporte prioritario y capacitación incluida</li>
+              <li>Acceso anticipado a nuevos módulos del ecosistema</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary">Contratar</a>
+          </div>
+          <div class="pricing-card">
+            <h3>EASY School</h3>
+            <div class="price">
+              <span class="price-custom">Desde $99.000 / mes</span>
+            </div>
+            <p class="price-annual price-annual-school">
+              <span class="price-annual-badge">Ahorra 2 meses pagando anual</span>
+              Planes desde <strong>$990.000 al año</strong> (Junior)
+            </p>
+            <p class="price-desc">Gestión académica: alumnos, profesores, notas y boletines</p>
+            <ul class="price-features">
+              <li>4 planes según tamaño del colegio</li>
+              <li>Gestión de notas y boletines</li>
+              <li>Soporte en español</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="easy-school/#precio" class="btn btn-outline">Ver planes</a>
+          </div>
+          <div class="pricing-card">
+            <h3>EASY POS</h3>
+            <div class="price">
+              <span class="price-custom">$99.000 / mes</span>
+            </div>
+            <p class="price-desc">Punto de venta e historial de turnos para tu negocio</p>
+            <ul class="price-features">
+              <li>Ventas en mostrador</li>
+              <li>Descuentos y cobro rápido</li>
+              <li>Historial de aperturas y cierres</li>
+              <li>Soporte en español</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline">Consultar</a>
+          </div>
+        </div>
+        <button type="button" class="easy-carousel-nav" aria-label="Solución siguiente" data-easy-carousel-next>
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+
+      <div class="school-pricing-block">
+        <h3 class="section-title">Planes EASY School</h3>
+        <p class="section-desc">Elige el plan según estudiantes y usuarios de tu institución. Pago anual: ahorras 2 meses.</p>
+        <div class="easy-carousel" data-easy-carousel>
+          <button type="button" class="easy-carousel-nav" aria-label="Plan anterior" data-easy-carousel-prev>
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes EASY School">
+            <div class="pricing-card">
+              <h3>Junior</h3>
+              <div class="price">
+                <span class="price-custom">$99.000 / mes</span>
               </div>
+              <p class="price-annual price-annual-school">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$990.000 al año</strong>
+              </p>
+              <p class="price-desc">Hasta 70 estudiantes, 7 usuarios</p>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
+            </div>
+            <div class="pricing-card pricing-card-featured">
+              <span class="badge">Popular</span>
+              <h3>Básico</h3>
+              <div class="price">
+                <span class="price-custom">$149.000 / mes</span>
+              </div>
+              <p class="price-annual price-annual-school">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$1.490.000 al año</strong>
+              </p>
+              <p class="price-desc">Hasta 150 estudiantes, 15 usuarios</p>
+              <a href="#contacto" class="btn btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+              <h3>Estándar</h3>
+              <div class="price">
+                <span class="price-custom">$249.000 / mes</span>
+              </div>
+              <p class="price-annual price-annual-school">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$2.490.000 al año</strong>
+              </p>
+              <p class="price-desc">Hasta 400 estudiantes, 30 usuarios</p>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
+            </div>
+            <div class="pricing-card">
+              <h3>Plus</h3>
+              <div class="price">
+                <span class="price-custom">$349.000 / mes</span>
+              </div>
+              <p class="price-annual price-annual-school">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$3.490.000 al año</strong>
+              </p>
+              <p class="price-desc">Hasta 800 estudiantes, 80 usuarios</p>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
             </div>
           </div>
-          <ul class="price-features">
-            <li>Combina Business, School y POS según tu operación</li>
-            <li>Usuarios, datos e informes en un solo lugar</li>
-            <li>Soporte prioritario y capacitación incluida</li>
-            <li>Acceso anticipado a nuevos módulos del ecosistema</li>
-            <li>Actualizaciones incluidas</li>
-          </ul>
-          <a href="#contacto" class="btn btn-primary">Contratar</a>
+          <button type="button" class="easy-carousel-nav" aria-label="Plan siguiente" data-easy-carousel-next>
+            <span aria-hidden="true">›</span>
+          </button>
         </div>
-        <div class="pricing-card">
-          <h3>EASY School</h3>
-          <div class="price">
-            <span class="price-custom">$100.000 / mes</span>
-          </div>
-          <p class="price-annual price-annual-school">
-            <span class="price-annual-badge">Ahorra pagando el año</span>
-            Paga <strong>$960.000 al año</strong> y el mes te sale a <strong>$80.000</strong>
-          </p>
-          <p class="price-desc">Gestión académica: alumnos, profesores, notas y boletines</p>
-          <ul class="price-features">
-            <li>Módulo completo para colegios</li>
-            <li>Gestión de notas y boletines</li>
-            <li>Soporte en español</li>
-            <li>Actualizaciones incluidas</li>
+        <div class="school-pricing-extras">
+          <h4>Extras opcionales</h4>
+          <ul>
+            <li><strong>Setup / carga inicial:</strong> $150.000 una vez (gratis si pagan anual)</li>
+            <li><strong>Capacitación extra (grupo):</strong> $80.000 / sesión</li>
+            <li><strong>Módulo Comercio/POS</strong> (si lo activan después): +$99.000 / mes</li>
           </ul>
-          <a href="#contacto" class="btn btn-outline">Consultar</a>
         </div>
       </div>
     </div>

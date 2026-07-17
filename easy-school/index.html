@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EASY School | Sistema de gestión académica para colegios</title>
-  <meta name="description" content="EASY School es un sistema de gestión académica para colegios en Colombia. Administra alumnos, profesores, notas y boletines desde $100.000/mes. Soporte en español.">
+  <meta name="description" content="EASY School es un sistema de gestión académica para colegios en Colombia. Planes desde $99.000/mes según el tamaño de tu institución. Soporte en español.">
   <meta name="keywords" content="software colegios, gestión académica, sistema notas escolares, boletines escolares, EASY School, Colombia">
   <meta name="author" content="EASY Platform">
   <meta name="robots" content="index, follow">
@@ -48,15 +48,11 @@
         "url": "https://proyectoeasy.net/easy-school/",
         "description": "Sistema de gestión académica con alumnos, profesores, notas y boletines.",
         "offers": {
-          "@type": "Offer",
-          "price": "100000",
+          "@type": "AggregateOffer",
+          "lowPrice": "99000",
+          "highPrice": "349000",
           "priceCurrency": "COP",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "100000",
-            "priceCurrency": "COP",
-            "unitText": "mes"
-          }
+          "offerCount": "4"
         },
         "provider": {
           "@type": "Organization",
@@ -88,7 +84,7 @@
             "name": "¿Cuánto cuesta EASY School?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "El plan mensual es de $100.000 COP. Pagando el año completo ($960.000) el mes equivale a $80.000."
+              "text": "Hay 4 planes: Junior ($99.000/mes), Básico ($149.000/mes), Estándar ($249.000/mes) y Plua ($349.000/mes). Pagando anual ahorras 2 meses. Setup inicial $150.000 (gratis con plan anual)."
             }
           }
         ]
@@ -167,16 +163,95 @@
   </section>
 
   <section class="module-pricing-section" id="precio">
-    <div class="module-pricing-inner">
-      <h2 class="section-title">Precio de EASY School</h2>
-      <div class="module-pricing-card">
-        <h2>$100.000 / mes</h2>
-        <p class="price-annual price-annual-school">
-          <span class="price-annual-badge">Ahorra pagando el año</span>
-          Paga <strong>$960.000 al año</strong> y el mes te sale a <strong>$80.000</strong>
-        </p>
-        <p class="price-desc">Módulo completo para colegios con soporte en español y actualizaciones incluidas.</p>
-        <a href="#contacto" class="btn btn-primary">Consultar plan</a>
+    <div class="module-pricing-inner-wide">
+      <h2 class="section-title">Planes de EASY School</h2>
+      <p class="section-desc">Elige según estudiantes y usuarios de tu institución. Pago anual: ahorras 2 meses.</p>
+      <div class="easy-carousel" data-easy-carousel>
+        <button type="button" class="easy-carousel-nav" aria-label="Ver plan anterior" data-easy-carousel-prev>
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes de EASY School">
+          <div class="pricing-card">
+            <h3>Junior</h3>
+            <div class="price">
+              <span class="price-custom">$99.000 / mes</span>
+            </div>
+            <p class="price-annual price-annual-school">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$990.000 al año</strong>
+            </p>
+            <p class="price-desc">Hasta 70 estudiantes, 7 usuarios</p>
+            <ul class="price-features">
+              <li>Alumnos, profesores, notas y boletines</li>
+              <li>Soporte en español</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline">Consultar</a>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <span class="badge">Popular</span>
+            <h3>Básico</h3>
+            <div class="price">
+              <span class="price-custom">$149.000 / mes</span>
+            </div>
+            <p class="price-annual price-annual-school">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$1.490.000 al año</strong>
+            </p>
+            <p class="price-desc">Hasta 150 estudiantes, 15 usuarios</p>
+            <ul class="price-features">
+              <li>Alumnos, profesores, notas y boletines</li>
+              <li>Soporte en español</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary">Consultar</a>
+          </div>
+          <div class="pricing-card">
+            <h3>Estándar</h3>
+            <div class="price">
+              <span class="price-custom">$249.000 / mes</span>
+            </div>
+            <p class="price-annual price-annual-school">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$2.490.000 al año</strong>
+            </p>
+            <p class="price-desc">Hasta 400 estudiantes, 30 usuarios</p>
+            <ul class="price-features">
+              <li>Alumnos, profesores, notas y boletines</li>
+              <li>Soporte en español</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline">Consultar</a>
+          </div>
+          <div class="pricing-card">
+            <h3>Plus</h3>
+            <div class="price">
+              <span class="price-custom">$349.000 / mes</span>
+            </div>
+            <p class="price-annual price-annual-school">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$3.490.000 al año</strong>
+            </p>
+            <p class="price-desc">Hasta 800 estudiantes, 80 usuarios</p>
+            <ul class="price-features">
+              <li>Alumnos, profesores, notas y boletines</li>
+              <li>Soporte en español</li>
+              <li>Actualizaciones incluidas</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline">Consultar</a>
+          </div>
+        </div>
+        <button type="button" class="easy-carousel-nav" aria-label="Ver plan siguiente" data-easy-carousel-next>
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+      <div class="school-pricing-extras">
+        <h4>Extras opcionales</h4>
+        <ul>
+          <li><strong>Setup / carga inicial:</strong> $150.000 una vez (gratis si pagan anual)</li>
+          <li><strong>Capacitación extra (grupo):</strong> $80.000 / sesión</li>
+          <li><strong>Módulo Comercio/POS</strong> (si lo activan después): +$99.000 / mes</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -199,7 +274,7 @@
         </article>
         <article class="module-faq-item">
           <h3>¿Cuánto cuesta?</h3>
-          <p>$100.000 COP al mes. Si pagas el año completo ($960.000), el costo mensual equivale a $80.000.</p>
+          <p>Planes desde $99.000/mes (Junior, hasta 70 estudiantes) hasta $349.000/mes (Plus, hasta 800 estudiantes). Pagando anual ahorras 2 meses. Setup inicial $150.000, gratis con plan anual.</p>
         </article>
       </div>
     </div>
