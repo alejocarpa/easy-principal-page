@@ -86,4 +86,46 @@
     window.addEventListener('resize', updateNav);
     updateNav();
   });
+
+  // Aparición progresiva de las secciones al hacer scroll
+  const revealSelectors = [
+    '.section-content',
+    '.school-pricing-block',
+    '.showcase-content',
+    '.showcase-image',
+    '.quote-text',
+    '.cta-content',
+    '.module-features-inner',
+    '.module-pricing-inner',
+    '.module-pricing-inner-wide',
+    '.module-faq-inner',
+    '.module-related-inner'
+  ];
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if ('IntersectionObserver' in window && !prefersReducedMotion) {
+    const revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-revealed');
+          revealObserver.unobserve(entry.target);
+        });
+      },
+      { rootMargin: '0px 0px -12% 0px', threshold: 0 }
+    );
+
+    document.querySelectorAll(revealSelectors.join(', ')).forEach(function (el) {
+      // Lo que ya está en pantalla al cargar se muestra sin animación.
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.9) return;
+      el.setAttribute('data-reveal', '');
+      revealObserver.observe(el);
+    });
+
+    // Escalonado suave entre bloques hermanos de una misma sección.
+    document.querySelectorAll('.school-pricing-block[data-reveal]').forEach(function (el, index) {
+      el.style.setProperty('--reveal-delay', Math.min(index, 3) * 0.08 + 's');
+    });
+  }
 })();

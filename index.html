@@ -68,15 +68,11 @@
         "url": "https://proyectoeasy.net/easy-business/",
         "description": "ERP para PYMES con clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes.",
         "offers": {
-          "@type": "Offer",
-          "price": "70000",
+          "@type": "AggregateOffer",
+          "lowPrice": "69000",
+          "highPrice": "219000",
           "priceCurrency": "COP",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "70000",
-            "priceCurrency": "COP",
-            "unitText": "mes"
-          }
+          "offerCount": "3"
         },
         "provider": { "@id": "https://proyectoeasy.net/#organization" }
       },
@@ -105,7 +101,14 @@
         "applicationSubCategory": "Point of Sale",
         "operatingSystem": "Web",
         "url": "https://proyectoeasy.net/easy-pos/",
-        "description": "Punto de venta con historial de turnos para negocios.",
+        "description": "Punto de venta con historial de turnos para negocios. Plan Inicio gratis hasta 100 ventas al mes.",
+        "offers": {
+          "@type": "AggregateOffer",
+          "lowPrice": "0",
+          "highPrice": "89000",
+          "priceCurrency": "COP",
+          "offerCount": "3"
+        },
         "provider": { "@id": "https://proyectoeasy.net/#organization" }
       }
     ]
@@ -403,39 +406,78 @@
   <section class="section section-pricing" id="precios">
     <div class="section-content">
       <h2 class="section-title">Elige tu solución</h2>
-      <p class="section-desc">Planes según el módulo que necesites: EASY Business, EASY School, EASY POS o el ecosistema completo en EASY Platform.</p>
+      <p class="section-desc">Planes por escalones según el módulo que necesites: EASY POS, EASY Business, EASY School, el combo EASY Comercio o el ecosistema completo en EASY Platform.</p>
+      <p class="section-desc">Todos los precios anuales funcionan igual: <strong>pagas 10 meses y recibes 12</strong>.</p>
       <div class="easy-carousel" data-easy-carousel>
         <button type="button" class="easy-carousel-nav" aria-label="Solución anterior" data-easy-carousel-prev>
           <span aria-hidden="true">‹</span>
         </button>
         <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Elige tu solución">
           <div class="pricing-card">
-            <h3>EASY Business</h3>
+            <h3>EASY POS</h3>
             <div class="price">
-              <span class="price-custom">$70.000 / mes</span>
+              <span class="price-custom">Gratis / desde $49.000 mes</span>
             </div>
             <p class="price-annual">
-              <span class="price-annual-badge">Ahorra pagando el año</span>
-              Paga <strong>$600.000 al año</strong> y el mes te sale a <strong>$50.000</strong>
+              <span class="price-annual-badge">Empieza sin pagar</span>
+              Plan <strong>Inicio gratis para siempre</strong> hasta 100 ventas al mes
+            </p>
+            <p class="price-desc">Punto de venta y control de turnos de caja para tu negocio</p>
+            <ul class="price-features">
+              <li>3 planes: Inicio, Negocio y Pro</li>
+              <li>Ventas en mostrador y cobro rápido</li>
+              <li>Apertura y cierre de turno con arqueo</li>
+              <li>Inventario conectado al POS (plan Pro)</li>
+              <li>Soporte en español</li>
+            </ul>
+            <a href="#planes-pos" class="btn btn-outline">Ver planes</a>
+          </div>
+          <div class="pricing-card">
+            <h3>EASY Business</h3>
+            <div class="price">
+              <span class="price-custom">Desde $69.000 / mes</span>
+            </div>
+            <p class="price-annual">
+              <span class="price-annual-badge">Ahorra 2 meses pagando anual</span>
+              Planes desde <strong>$690.000 al año</strong> (Emprendedor)
             </p>
             <p class="price-desc">ERP para PYMES: clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes</p>
             <ul class="price-features">
-              <li>Módulo completo para negocios</li>
+              <li>3 planes: Emprendedor, Pyme y Premium</li>
               <li>Facturas en PDF listas para impresión</li>
               <li>Gestión de cartera y cuentas por cobrar</li>
               <li>Informes de ventas e inventario</li>
               <li>Soporte en español</li>
               <li>Actualizaciones incluidas</li>
             </ul>
-            <a href="#contacto" class="btn btn-outline">Consultar</a>
+            <a href="#planes-business" class="btn btn-outline">Ver planes</a>
           </div>
           <div class="pricing-card pricing-card-featured">
-            <span class="badge">Recomendado</span>
+            <span class="badge">Oferta estrella</span>
+            <h3>EASY Comercio</h3>
+            <div class="price">
+              <span class="price-custom">$159.000 / mes</span>
+            </div>
+            <p class="price-annual">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$1.590.000 al año</strong> — por separado valdría $218.000 al mes
+            </p>
+            <p class="price-desc">EASY Business Pyme + EASY POS Pro en una sola plataforma, un solo login y un solo precio.</p>
+            <ul class="price-features">
+              <li>Vende en mostrador (POS) y por pedido (Business) con el mismo inventario</li>
+              <li>Cartera, proveedores e informes unificados</li>
+              <li>5 usuarios incluidos</li>
+              <li>Ahorras $59.000 al mes ($708.000 al año)</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary">Contratar combo</a>
+          </div>
+          <div class="pricing-card">
             <h3>EASY Platform</h3>
             <div class="price">
               <span class="price-custom">Personalizado</span>
             </div>
-            <p class="price-desc">Arma tu plataforma combinando los módulos que necesitas hoy y suma nuevos sin cambiar de sistema.</p>
+            <p class="price-desc">Combina Business, School y POS. Cotización según sedes, usuarios y módulos.</p>
             <div class="platform-modules">
               <div class="platform-modules-hub">
                 <span class="platform-modules-hub-label">EASY Platform</span>
@@ -466,7 +508,7 @@
               <li>Acceso anticipado a nuevos módulos del ecosistema</li>
               <li>Actualizaciones incluidas</li>
             </ul>
-            <a href="#contacto" class="btn btn-primary">Contratar</a>
+            <a href="#contacto" class="btn btn-outline">Solicitar cotización</a>
           </div>
           <div class="pricing-card">
             <h3>EASY School</h3>
@@ -486,25 +528,157 @@
             </ul>
             <a href="easy-school/#precio" class="btn btn-outline">Ver planes</a>
           </div>
-          <div class="pricing-card">
-            <h3>EASY POS</h3>
-            <div class="price">
-              <span class="price-custom">$99.000 / mes</span>
-            </div>
-            <p class="price-desc">Punto de venta e historial de turnos para tu negocio</p>
-            <ul class="price-features">
-              <li>Ventas en mostrador</li>
-              <li>Descuentos y cobro rápido</li>
-              <li>Historial de aperturas y cierres</li>
-              <li>Soporte en español</li>
-              <li>Actualizaciones incluidas</li>
-            </ul>
-            <a href="#contacto" class="btn btn-outline">Consultar</a>
-          </div>
         </div>
         <button type="button" class="easy-carousel-nav" aria-label="Solución siguiente" data-easy-carousel-next>
           <span aria-hidden="true">›</span>
         </button>
+      </div>
+
+      <div class="school-pricing-block" id="planes-pos">
+        <h3 class="section-title">Planes EASY POS</h3>
+        <p class="section-desc">Empieza gratis y sube de plan cuando tu operación lo pida. Pago anual: pagas 10 meses y recibes 12.</p>
+        <div class="easy-carousel" data-easy-carousel>
+          <button type="button" class="easy-carousel-nav" aria-label="Plan POS anterior" data-easy-carousel-prev>
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes EASY POS">
+            <div class="pricing-card">
+              <h3>POS Inicio</h3>
+              <div class="price">
+                <span class="price-custom">$0 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Gratis para siempre</span>
+                Hasta <strong>100 ventas al mes</strong>, sin costo de instalación
+              </p>
+              <p class="price-desc">1 caja, 1 usuario</p>
+              <ul class="price-features">
+                <li>Punto de venta: registrar ventas y cobrar</li>
+                <li>Historial de turnos básico (últimos 7 días)</li>
+                <li>Sin costo de instalación</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline">Empezar gratis</a>
+            </div>
+            <div class="pricing-card pricing-card-featured">
+              <span class="badge">Popular</span>
+              <h3>POS Negocio</h3>
+              <div class="price">
+                <span class="price-custom">$49.000 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$490.000 al año</strong> (2 meses gratis)
+              </p>
+              <p class="price-desc">Ventas ilimitadas, 1 caja, 2 usuarios</p>
+              <ul class="price-features">
+                <li>Descuentos y cobro rápido</li>
+                <li>Apertura y cierre de turno con arqueo</li>
+                <li>Historial completo de turnos y movimientos</li>
+                <li>Informe diario de ventas</li>
+                <li>Soporte en español</li>
+              </ul>
+              <a href="#contacto" class="btn btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+              <h3>POS Pro</h3>
+              <div class="price">
+                <span class="price-custom">$89.000 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$890.000 al año</strong> (2 meses gratis)
+              </p>
+              <p class="price-desc">Hasta 3 cajas, 5 usuarios</p>
+              <ul class="price-features">
+                <li>Todo lo del plan Negocio</li>
+                <li>Inventario conectado al POS con descuento automático de stock</li>
+                <li>Cierre de caja por cajero y reporte de diferencias</li>
+                <li>Informes de productos más vendidos y horas pico</li>
+                <li>Soporte prioritario</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
+            </div>
+          </div>
+          <button type="button" class="easy-carousel-nav" aria-label="Plan POS siguiente" data-easy-carousel-next>
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="school-pricing-block" id="planes-business">
+        <h3 class="section-title">Planes EASY Business</h3>
+        <p class="section-desc">Elige el plan según usuarios y módulos que necesita tu negocio. Pago anual: pagas 10 meses y recibes 12.</p>
+        <div class="easy-carousel" data-easy-carousel>
+          <button type="button" class="easy-carousel-nav" aria-label="Plan Business anterior" data-easy-carousel-prev>
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes EASY Business">
+            <div class="pricing-card">
+              <h3>Emprendedor</h3>
+              <div class="price">
+                <span class="price-custom">$69.000 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$690.000 al año</strong> (2 meses gratis)
+              </p>
+              <p class="price-desc">1 usuario. Para el negocio que hoy factura en cuaderno o Excel.</p>
+              <ul class="price-features">
+                <li>Clientes: ficha, historial y seguimiento</li>
+                <li>Productos: catálogo, precios y categorías</li>
+                <li>Pedidos: registro y seguimiento</li>
+                <li>Facturas en PDF listas para impresión</li>
+                <li>Informe básico de ventas</li>
+                <li>Soporte en español por WhatsApp</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
+            </div>
+            <div class="pricing-card pricing-card-featured">
+              <span class="badge">Popular</span>
+              <h3>Pyme</h3>
+              <div class="price">
+                <span class="price-custom">$129.000 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$1.290.000 al año</strong> (2 meses gratis)
+              </p>
+              <p class="price-desc">3 usuarios. Para el negocio que ya vende y necesita control de plata y stock.</p>
+              <ul class="price-features">
+                <li>Todo lo del plan Emprendedor</li>
+                <li>Inventario: stock, entradas, salidas y alertas de mínimos</li>
+                <li>Cartera: cuentas por cobrar, pagos y cartera vencida</li>
+                <li>Proveedores: gestión de proveedores y compras</li>
+                <li>Informes de ventas e inventario</li>
+                <li>Soporte prioritario</li>
+              </ul>
+              <a href="#contacto" class="btn btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+              <h3>Premium</h3>
+              <div class="price">
+                <span class="price-custom">$219.000 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Anual</span>
+                <strong>$2.190.000 al año</strong> (2 meses gratis)
+              </p>
+              <p class="price-desc">8 usuarios. Para negocios con varias sucursales o bodegas.</p>
+              <ul class="price-features">
+                <li>Todo lo del plan Pyme</li>
+                <li>Multi-bodega y multi-sucursal</li>
+                <li>Informes gerenciales y dashboard de tendencias</li>
+                <li>Roles y permisos por usuario</li>
+                <li>Capacitación incluida (2 sesiones)</li>
+                <li>Soporte prioritario con SLA</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
+            </div>
+          </div>
+          <button type="button" class="easy-carousel-nav" aria-label="Plan Business siguiente" data-easy-carousel-next>
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
       </div>
 
       <div class="school-pricing-block">
@@ -569,12 +743,23 @@
             <span aria-hidden="true">›</span>
           </button>
         </div>
+      </div>
+
+      <div class="school-pricing-block">
         <div class="school-pricing-extras">
-          <h4>Extras opcionales</h4>
+          <h4>Extras opcionales (aplican a todos los productos)</h4>
           <ul>
-            <li><strong>Configuración / implementación inicial:</strong> $150.000 una vez (gratis si pagan anual)</li>
-            <li><strong>Capacitación extra (grupo):</strong> $80.000 / sesión</li>
-            <li><strong>Módulo Comercio/POS</strong> (si lo activan después): +$99.000 / mes</li>
+            <li><strong>Implementación y migración de datos:</strong> $150.000 única vez (gratis pagando anual)</li>
+            <li><strong>Capacitación adicional (grupo):</strong> $80.000 por sesión</li>
+            <li><strong>Agregar módulo POS a un plan Business existente:</strong> +$49.000 / mes</li>
+          </ul>
+        </div>
+        <div class="school-pricing-extras">
+          <h4>Sobre la facturación electrónica DIAN</h4>
+          <ul>
+            <li>Hoy EASY <strong>no emite factura electrónica DIAN</strong>: está en el roadmap del producto.</li>
+            <li>Lo que EASY sí hace es que sepas exactamente <strong>qué vendiste, qué te deben y qué te queda en bodega</strong>.</li>
+            <li>Las facturas se generan en <strong>PDF listas para imprimir</strong> y entregar al cliente.</li>
           </ul>
         </div>
       </div>

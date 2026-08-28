@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EASY Business | ERP para PYMES con inventario, cartera y facturas PDF</title>
-  <meta name="description" content="EASY Business es un ERP para PYMES en Colombia. Gestiona clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes desde $70.000/mes.">
+  <meta name="description" content="EASY Business es un ERP para PYMES en Colombia. Gestiona clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes. Planes desde $69.000/mes.">
   <meta name="keywords" content="ERP PYMES Colombia, software inventario, cuentas por cobrar, facturas PDF, gestión de cartera, EASY Business">
   <meta name="author" content="EASY Platform">
   <meta name="robots" content="index, follow">
@@ -49,15 +49,11 @@
         "url": "https://proyectoeasy.net/easy-business/",
         "description": "ERP para PYMES con clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes.",
         "offers": {
-          "@type": "Offer",
-          "price": "70000",
+          "@type": "AggregateOffer",
+          "lowPrice": "69000",
+          "highPrice": "219000",
           "priceCurrency": "COP",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "70000",
-            "priceCurrency": "COP",
-            "unitText": "mes"
-          }
+          "offerCount": "3"
         },
         "provider": {
           "@type": "Organization",
@@ -89,7 +85,15 @@
             "name": "¿Cuánto cuesta EASY Business?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "El plan mensual es de $70.000 COP. Pagando el año completo ($600.000) el mes equivale a $50.000."
+              "text": "Hay 3 planes: Emprendedor ($69.000/mes, 1 usuario), Pyme ($129.000/mes, 3 usuarios con inventario, cartera y proveedores) y Premium ($219.000/mes, 8 usuarios con multi-bodega y multi-sucursal). Pagando anual ahorras 2 meses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿EASY Business emite factura electrónica DIAN?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hoy no. La facturación electrónica DIAN está en el roadmap. EASY Business genera facturas en PDF listas para imprimir y te permite saber qué vendiste, qué te deben y qué te queda en bodega."
             }
           }
         ]
@@ -176,16 +180,95 @@
   </section>
 
   <section class="module-pricing-section" id="precio">
-    <div class="module-pricing-inner">
-      <h2 class="section-title">Precio de EASY Business</h2>
-      <div class="module-pricing-card">
-        <h2>$70.000 / mes</h2>
-        <p class="price-annual">
-          <span class="price-annual-badge">Ahorra pagando el año</span>
-          Paga <strong>$600.000 al año</strong> y el mes te sale a <strong>$50.000</strong>
-        </p>
-        <p class="price-desc">Módulo completo para negocios con soporte en español y actualizaciones incluidas.</p>
-        <a href="#contacto" class="btn btn-primary">Consultar plan</a>
+    <div class="module-pricing-inner-wide">
+      <h2 class="section-title">Planes de EASY Business</h2>
+      <p class="section-desc">Tres escalones según usuarios y módulos. Pago anual: pagas 10 meses y recibes 12.</p>
+      <div class="easy-carousel" data-easy-carousel>
+        <button type="button" class="easy-carousel-nav" aria-label="Ver plan anterior" data-easy-carousel-prev>
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes de EASY Business">
+          <div class="pricing-card">
+            <h3>Emprendedor</h3>
+            <div class="price">
+              <span class="price-custom">$69.000 / mes</span>
+            </div>
+            <p class="price-annual">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$690.000 al año</strong> (2 meses gratis)
+            </p>
+            <p class="price-desc">1 usuario. Para el negocio que hoy factura en cuaderno o Excel.</p>
+            <ul class="price-features">
+              <li>Clientes: ficha, historial y seguimiento</li>
+              <li>Productos: catálogo, precios y categorías</li>
+              <li>Pedidos: registro y seguimiento</li>
+              <li>Facturas en PDF listas para impresión</li>
+              <li>Informe básico de ventas</li>
+              <li>Soporte en español por WhatsApp</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline">Consultar</a>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <span class="badge">Popular</span>
+            <h3>Pyme</h3>
+            <div class="price">
+              <span class="price-custom">$129.000 / mes</span>
+            </div>
+            <p class="price-annual">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$1.290.000 al año</strong> (2 meses gratis)
+            </p>
+            <p class="price-desc">3 usuarios. Para el negocio que ya vende y necesita control de plata y stock.</p>
+            <ul class="price-features">
+              <li>Todo lo del plan Emprendedor</li>
+              <li>Inventario: stock, entradas, salidas y alertas de mínimos</li>
+              <li>Cartera: cuentas por cobrar, pagos y cartera vencida</li>
+              <li>Proveedores: gestión de proveedores y compras</li>
+              <li>Informes de ventas e inventario</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary">Consultar</a>
+          </div>
+          <div class="pricing-card">
+            <h3>Premium</h3>
+            <div class="price">
+              <span class="price-custom">$219.000 / mes</span>
+            </div>
+            <p class="price-annual">
+              <span class="price-annual-badge">Anual</span>
+              <strong>$2.190.000 al año</strong> (2 meses gratis)
+            </p>
+            <p class="price-desc">8 usuarios. Para negocios con varias sucursales o bodegas.</p>
+            <ul class="price-features">
+              <li>Todo lo del plan Pyme</li>
+              <li>Multi-bodega y multi-sucursal</li>
+              <li>Informes gerenciales y dashboard de tendencias</li>
+              <li>Roles y permisos por usuario</li>
+              <li>Capacitación incluida (2 sesiones)</li>
+              <li>Soporte prioritario con SLA</li>
+            </ul>
+            <a href="#contacto" class="btn btn-outline">Consultar</a>
+          </div>
+        </div>
+        <button type="button" class="easy-carousel-nav" aria-label="Ver plan siguiente" data-easy-carousel-next>
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+      <div class="school-pricing-extras">
+        <h4>Combo EASY Comercio — $159.000 / mes</h4>
+        <ul>
+          <li><strong>EASY Business Pyme + EASY POS Pro</strong> por menos que comprarlos por separado ($218.000 / mes).</li>
+          <li>Vendes en mostrador (POS) y por pedido (Business) con el <strong>mismo inventario</strong>, 5 usuarios.</li>
+          <li>Anual: <strong>$1.590.000 al año</strong>. Ahorras $59.000 al mes ($708.000 al año).</li>
+        </ul>
+      </div>
+      <div class="school-pricing-extras">
+        <h4>Extras opcionales</h4>
+        <ul>
+          <li><strong>Implementación y migración de datos:</strong> $150.000 única vez (gratis pagando anual)</li>
+          <li><strong>Capacitación adicional (grupo):</strong> $80.000 por sesión</li>
+          <li><strong>Agregar módulo POS a un plan Business existente:</strong> +$49.000 / mes</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -204,11 +287,15 @@
         </article>
         <article class="module-faq-item">
           <h3>¿Se integra con otros módulos de EASY?</h3>
-          <p>Sí. Puedes combinar EASY Business con EASY POS u otros módulos del ecosistema EASY Platform según crezca tu operación.</p>
+          <p>Sí. Puedes combinar EASY Business con EASY POS u otros módulos del ecosistema EASY Platform según crezca tu operación. Si ya tienes un plan Business, agregar el módulo POS cuesta +$49.000 al mes, o puedes pasar al combo EASY Comercio por $159.000 al mes.</p>
         </article>
         <article class="module-faq-item">
           <h3>¿Cuánto cuesta?</h3>
-          <p>$70.000 COP al mes. Si pagas el año completo ($600.000), el costo mensual equivale a $50.000.</p>
+          <p>Hay tres planes: Emprendedor $69.000/mes (1 usuario), Pyme $129.000/mes (3 usuarios, con inventario, cartera y proveedores) y Premium $219.000/mes (8 usuarios, multi-bodega y multi-sucursal). Pagando el año completo pagas 10 meses y recibes 12.</p>
+        </article>
+        <article class="module-faq-item">
+          <h3>¿Emite factura electrónica DIAN?</h3>
+          <p>Hoy no: está en el roadmap. Lo que EASY Business sí hace es que sepas exactamente qué vendiste, qué te deben y qué te queda en bodega, con facturas en PDF listas para imprimir y entregar al cliente.</p>
         </article>
       </div>
     </div>
