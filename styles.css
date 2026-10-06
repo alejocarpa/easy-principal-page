@@ -988,6 +988,45 @@ a {
   font-weight: 600;
 }
 
+.price-discount {
+  display: inline-block;
+  background: #dc2626;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 980px;
+  vertical-align: middle;
+}
+
+.price-annual-monthly {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.price-annual .price-discount {
+  margin-right: 0.35rem;
+}
+
+.price-annual s {
+  color: var(--color-text-muted);
+  margin-right: 0.25rem;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.price-annual s::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 37%;
+  border-top: 1.5px solid currentColor;
+}
+
 .price-annual {
   margin-top: var(--space-sm);
   margin-bottom: var(--space-md);
