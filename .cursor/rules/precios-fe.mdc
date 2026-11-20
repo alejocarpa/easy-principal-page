@@ -1,13 +1,13 @@
 ---
-description: Precios de facturación electrónica DIAN — leer la fuente de verdad del proyecto antes de cotizar o actualizar la web
+description: Precios EASY (software, Contabilidad, FE DIAN) — leer la fuente de verdad antes de cotizar o actualizar la web
 alwaysApply: true
 ---
 
-# Facturación electrónica — referencia de precios
+# Precios EASY — referencia
 
-Cuando el usuario hable de **precios**, **planes**, **facturación electrónica**, **FE**, **DIAN**, **emisiones** o pida actualizar tarifas en las páginas:
+Cuando el usuario hable de **precios**, **planes**, **POS**, **Business**, **Contabilidad**, **facturación electrónica**, **FE**, **DIAN**, **emisiones**, **combo** o pida actualizar tarifas:
 
 1. **Lee primero** `precios-facturacion-electronica.md` en la raíz del proyecto.
-2. Usa **solo** los valores de ese archivo (costos proveedor y precios al cliente). No inventes ni reutilices cifras de chats anteriores si el archivo cambió.
-3. Si el usuario actualiza el archivo o dice que el proveedor cambió precios, **sincroniza** las páginas listadas en ese documento (`index.html`, `easy-business/index.html`, `easy-pos/index.html`) y el historial del mismo archivo.
-4. Respeta las reglas del archivo: FE anual = ×12; software anual = pagas 10 llevas 12; FE es add-on opcional.
+2. Usa **solo** los valores de ese archivo. No inventes ni reutilices cifras de chats anteriores si el archivo cambió.
+3. Si el usuario actualiza el archivo o cambia tarifas, **sincroniza** las páginas listadas ahí y el historial del mismo archivo.
+4. Reglas clave del archivo: POS y Business al mismo precio con mismos módulos base; Contabilidad y FE son add-ons; FE anual = ×12; software/Contabilidad anual = pagas 10 llevas 12.

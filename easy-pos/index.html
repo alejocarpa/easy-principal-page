@@ -51,13 +51,11 @@
         "applicationSubCategory": "Point of Sale",
         "operatingSystem": "Web",
         "url": "https://proyectoeasy.net/easy-pos/",
-        "description": "Punto de venta con cobro, historial de turnos, inventario, ticket PDF, informes de ventas y facturación electrónica DIAN opcional. 15 días gratis del plan Negocio ($49.000/mes).",
+        "description": "Punto de venta con cobro, historial de turnos, inventario, ticket PDF e informes. Contabilidad y facturación electrónica DIAN opcionales. 15 días gratis. $49.000/mes.",
         "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "49000",
-          "highPrice": "89000",
-          "priceCurrency": "COP",
-          "offerCount": "2"
+          "@type": "Offer",
+          "price": "49000",
+          "priceCurrency": "COP"
         },
         "provider": {
           "@type": "Organization",
@@ -73,7 +71,7 @@
             "name": "¿Qué incluye EASY POS?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Incluye punto de venta, historial de turnos, inventario conectado, proveedores, ticket en PDF, informe de ventas y facturación electrónica DIAN opcional."
+              "text": "Incluye punto de venta, historial de turnos, clientes, productos, inventario, cartera, proveedores, ticket en PDF e informes. Contabilidad (+$29.000) y facturación electrónica DIAN son opcionales."
             }
           },
           {
@@ -89,7 +87,7 @@
             "name": "¿Se integra con EASY Business?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. EASY POS forma parte del ecosistema EASY Platform y puede combinarse con EASY Business para una operación comercial integrada. El combo EASY Comercio (POS Pro + Business Pyme) cuesta $159.000/mes."
+              "text": "Sí. Ambos cuestan $49.000/mes con los mismos módulos base. El combo EASY Comercio (POS + Business) cuesta $79.000/mes."
             }
           },
           {
@@ -97,7 +95,7 @@
             "name": "¿Cuánto cuesta EASY POS?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Hay 2 planes: Negocio $49.000/mes (ventas ilimitadas, 1 caja, 2 usuarios) con 15 días gratis para probar, y Pro $89.000/mes (hasta 3 cajas, 5 usuarios, inventario conectado). Pagando anual ahorras 2 meses. La facturación electrónica DIAN es opcional desde $35.000/mes."
+              "text": "EASY POS cuesta $49.000/mes ($490.000 al año). Incluye 15 días gratis. Contabilidad opcional +$29.000/mes. Facturación electrónica DIAN opcional desde $35.000/mes."
             }
           },
           {
@@ -105,7 +103,7 @@
             "name": "¿Emite factura electrónica DIAN?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí, como add-on opcional. Puedes contratar solo el plan POS o sumar un paquete FE: 120 emisiones ($35.000/mes), 240 ($45.000/mes) o 360 ($59.000/mes). El anual de FE se cobra los 12 meses."
+              "text": "Sí, como add-on opcional. Paquetes FE: 300 emisiones ($35.000/mes), 600 ($45.000/mes), 1000 ($59.000/mes) o 2000 ($75.000/mes). El anual de FE se cobra los 12 meses."
             }
           }
         ]
@@ -198,8 +196,8 @@
           <p>Emisión DIAN opcional según el volumen de facturas de tu negocio.</p>
         </article>
         <article class="module-feature-item">
-          <h3>Integración EASY Platform</h3>
-          <p>Combínalo con EASY Business para una operación comercial más completa.</p>
+          <h3>Contabilidad (opcional)</h3>
+          <p>Módulo adicional (+$29.000/mes): reportes contables, terceros y plan de cuentas.</p>
         </article>
       </div>
     </div>
@@ -207,54 +205,34 @@
 
   <section class="module-pricing-section" id="precio">
     <div class="module-pricing-inner-wide">
-      <h2 class="section-title">Planes de EASY POS</h2>
-      <p class="section-desc">Prueba 15 días gratis el plan Negocio ($49.000). Pago anual del software: pagas 10 meses y recibes 12. Facturación electrónica DIAN opcional.</p>
+      <h2 class="section-title">Plan EASY POS</h2>
+      <p class="section-desc">$49.000/mes — mismo precio y mismos módulos base que EASY Business. 15 días gratis. Contabilidad y FE DIAN opcionales.</p>
       <div class="easy-carousel" data-easy-carousel>
         <button type="button" class="easy-carousel-nav" aria-label="Ver plan anterior" data-easy-carousel-prev>
           <span aria-hidden="true">‹</span>
         </button>
-        <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes de EASY POS">
+        <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Plan EASY POS">
           <div class="pricing-card pricing-card-featured">
-            <span class="badge">Popular</span>
-            <h3>POS Negocio</h3>
+            <span class="badge">15 días gratis</span>
+            <h3>EASY POS</h3>
             <div class="price">
               <span class="price-custom">$49.000 / mes</span>
             </div>
             <p class="price-annual">
-              <span class="price-annual-badge">15 días gratis</span>
-              Anual: <strong>$490.000 al año</strong> (2 meses gratis)
+              <span class="price-annual-badge">Anual</span>
+              <strong>$490.000 al año</strong> (2 meses gratis)
             </p>
-            <p class="price-desc">Ventas ilimitadas, 1 caja, 2 usuarios</p>
+            <p class="price-desc">Punto de venta + módulos comerciales completos</p>
             <ul class="price-features">
-              <li>15 días gratis para probar el plan completo</li>
-              <li>Descuentos y cobro rápido</li>
-              <li>Apertura y cierre de turno con arqueo</li>
-              <li>Historial completo de turnos y movimientos</li>
-              <li>Informe diario de ventas</li>
+              <li>Cobro en mostrador, descuentos y turnos de caja</li>
+              <li>Clientes, productos, inventario y proveedores</li>
+              <li>Cartera, pedidos e informes de ventas</li>
+              <li>Ticket / factura en PDF</li>
+              <li>Multisucursal / bodegas</li>
+              <li>Contabilidad opcional (+$29.000 / mes)</li>
               <li>Facturación electrónica DIAN opcional</li>
-              <li>Soporte en español</li>
             </ul>
             <a href="#contacto" class="btn btn-primary">Probar 15 días gratis</a>
-          </div>
-          <div class="pricing-card">
-            <h3>POS Pro</h3>
-            <div class="price">
-              <span class="price-custom">$89.000 / mes</span>
-            </div>
-            <p class="price-annual">
-              <span class="price-annual-badge">Anual</span>
-              <strong>$890.000 al año</strong> (2 meses gratis)
-            </p>
-            <p class="price-desc">Hasta 3 cajas, 5 usuarios</p>
-            <ul class="price-features">
-              <li>Todo lo del plan Negocio</li>
-              <li>Inventario conectado al POS con descuento automático de stock</li>
-              <li>Cierre de caja por cajero y reporte de diferencias</li>
-              <li>Informes de productos más vendidos y horas pico</li>
-              <li>Facturación electrónica DIAN opcional</li>
-              <li>Soporte prioritario</li>
-            </ul>
-            <a href="#contacto" class="btn btn-outline">Consultar</a>
           </div>
         </div>
         <button type="button" class="easy-carousel-nav" aria-label="Ver plan siguiente" data-easy-carousel-next>
@@ -270,7 +248,7 @@
           </button>
           <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Paquetes de facturación electrónica">
             <div class="pricing-card">
-              <h3>FE 120</h3>
+              <h3>FE 300</h3>
               <div class="price">
                 <span class="price-custom">$35.000 / mes</span>
               </div>
@@ -278,17 +256,17 @@
                 <span class="price-annual-badge">Anual ×12</span>
                 <strong>$420.000 al año</strong>
               </p>
-              <p class="price-desc">Hasta 120 emisiones al mes</p>
+              <p class="price-desc">Hasta 300 emisiones al mes</p>
               <ul class="price-features">
                 <li>Add-on para tu plan POS</li>
                 <li>Emisión electrónica DIAN</li>
-                <li>Ideal para bajo volumen</li>
+                <li>Ideal para bajo / medio volumen</li>
               </ul>
               <a href="#contacto" class="btn btn-outline">Consultar</a>
             </div>
             <div class="pricing-card pricing-card-featured">
               <span class="badge">Recomendado</span>
-              <h3>FE 240</h3>
+              <h3>FE 600</h3>
               <div class="price">
                 <span class="price-custom">$45.000 / mes</span>
               </div>
@@ -296,7 +274,7 @@
                 <span class="price-annual-badge">Anual ×12</span>
                 <strong>$540.000 al año</strong>
               </p>
-              <p class="price-desc">Hasta 240 emisiones al mes</p>
+              <p class="price-desc">Hasta 600 emisiones al mes</p>
               <ul class="price-features">
                 <li>Add-on para tu plan POS</li>
                 <li>Emisión electrónica DIAN</li>
@@ -305,7 +283,7 @@
               <a href="#contacto" class="btn btn-primary">Consultar</a>
             </div>
             <div class="pricing-card">
-              <h3>FE 360</h3>
+              <h3>FE 1000</h3>
               <div class="price">
                 <span class="price-custom">$59.000 / mes</span>
               </div>
@@ -313,11 +291,28 @@
                 <span class="price-annual-badge">Anual ×12</span>
                 <strong>$708.000 al año</strong>
               </p>
-              <p class="price-desc">Hasta 360 emisiones al mes</p>
+              <p class="price-desc">Hasta 1.000 emisiones al mes</p>
               <ul class="price-features">
                 <li>Add-on para tu plan POS</li>
                 <li>Emisión electrónica DIAN</li>
                 <li>Para alto volumen de facturas</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
+            </div>
+            <div class="pricing-card">
+              <h3>FE 2000</h3>
+              <div class="price">
+                <span class="price-custom">$75.000 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Anual ×12</span>
+                <strong>$900.000 al año</strong>
+              </p>
+              <p class="price-desc">Hasta 2.000 emisiones al mes</p>
+              <ul class="price-features">
+                <li>Add-on para tu plan POS</li>
+                <li>Emisión electrónica DIAN</li>
+                <li>Para operaciones de muy alto volumen</li>
               </ul>
               <a href="#contacto" class="btn btn-outline">Consultar</a>
             </div>
@@ -328,12 +323,12 @@
         </div>
       </div>
       <div class="school-pricing-extras">
-        <h4>Combo EASY Comercio — $159.000 / mes</h4>
+        <h4>Combo EASY Comercio — $79.000 / mes</h4>
         <ul>
-          <li><strong>EASY POS Pro + EASY Business Pyme</strong> por menos que comprarlos por separado ($218.000 / mes).</li>
-          <li>Mostrador y pedidos con el <strong>mismo inventario</strong>, cartera y proveedores unificados, 5 usuarios.</li>
-          <li>Anual: <strong>$1.590.000 al año</strong>. Ahorras $59.000 al mes ($708.000 al año).</li>
-          <li>La facturación electrónica DIAN se suma aparte si la necesitas.</li>
+          <li><strong>EASY POS + EASY Business</strong> por menos que comprarlos por separado ($98.000 / mes).</li>
+          <li>Mostrador y pedidos con el <strong>mismo inventario</strong>, cartera y proveedores unificados.</li>
+          <li>Anual: <strong>$790.000 al año</strong>. Ahorras $19.000 al mes ($228.000 al año).</li>
+          <li>Contabilidad y FE DIAN se suman aparte si las necesitas.</li>
         </ul>
       </div>
       <div class="school-pricing-extras">
@@ -341,8 +336,8 @@
         <ul>
           <li><strong>Implementación y migración de datos:</strong> $150.000 única vez (gratis pagando anual)</li>
           <li><strong>Capacitación adicional (grupo):</strong> $80.000 por sesión</li>
-          <li><strong>Agregar módulo POS a un plan Business existente:</strong> +$49.000 / mes</li>
-          <li><strong>Facturación electrónica DIAN:</strong> desde $35.000 / mes (FE 120, 240 o 360)</li>
+          <li><strong>Módulo Contabilidad:</strong> +$29.000 / mes · $290.000 al año</li>
+          <li><strong>Facturación electrónica DIAN:</strong> desde $35.000 / mes (FE 300, 600, 1000 o 2000)</li>
         </ul>
       </div>
     </div>
@@ -354,7 +349,7 @@
       <div class="module-faq-list">
         <article class="module-faq-item">
           <h3>¿Qué incluye EASY POS?</h3>
-          <p>Punto de venta, historial de turnos, inventario, proveedores, ticket en PDF, informe de ventas y facturación electrónica DIAN opcional.</p>
+          <p>Punto de venta, historial de turnos, clientes, productos, inventario, cartera, proveedores, ticket en PDF e informes. Contabilidad (+$29.000) y FE DIAN son opcionales.</p>
         </article>
         <article class="module-faq-item">
           <h3>¿Necesito un equipo especial?</h3>
@@ -362,19 +357,19 @@
         </article>
         <article class="module-faq-item">
           <h3>¿Funciona junto con EASY Business?</h3>
-          <p>Sí. Forman parte del mismo ecosistema EASY Platform y pueden operar de forma complementaria según las necesidades de tu negocio.</p>
+          <p>Sí. Ambos cuestan $49.000/mes con los mismos módulos base. El combo EASY Comercio (POS + Business) cuesta $79.000/mes.</p>
         </article>
         <article class="module-faq-item">
           <h3>¿Cuánto cuesta EASY POS?</h3>
-          <p>Hay dos planes: Negocio $49.000/mes (ventas ilimitadas, 1 caja, 2 usuarios) y Pro $89.000/mes (hasta 3 cajas, 5 usuarios e inventario conectado). Incluye 15 días gratis del plan Negocio para probarlo. Pagando el año del software pagas 10 meses y recibes 12. La facturación electrónica DIAN es opcional desde $35.000/mes.</p>
+          <p>$49.000/mes ($490.000 al año), con 15 días gratis. Contabilidad opcional +$29.000/mes. Facturación electrónica DIAN opcional desde $35.000/mes.</p>
         </article>
         <article class="module-faq-item">
           <h3>¿Cómo funcionan los 15 días gratis?</h3>
-          <p>Te activamos el plan Negocio completo durante 15 días sin cobrar. Cargas tus productos, lo usas en tu negocio y, si no te sirve, no pagas nada. Si quieres continuar, pasas al plan mensual o anual.</p>
+          <p>Te activamos el plan completo durante 15 días sin cobrar. Cargas tus productos, lo usas en tu negocio y, si no te sirve, no pagas nada. Si quieres continuar, pasas al plan mensual o anual.</p>
         </article>
         <article class="module-faq-item">
           <h3>¿Emite factura electrónica DIAN?</h3>
-          <p>Sí, como add-on opcional. Puedes contratar solo el plan POS (con facturas PDF) o sumar un paquete FE: 120 emisiones ($35.000/mes), 240 ($45.000/mes) o 360 ($59.000/mes). El anual de FE se cobra los 12 meses.</p>
+          <p>Sí, como add-on opcional. Paquetes FE: 300 emisiones ($35.000/mes), 600 ($45.000/mes), 1000 ($59.000/mes) o 2000 ($75.000/mes). El anual de FE se cobra los 12 meses.</p>
         </article>
       </div>
     </div>

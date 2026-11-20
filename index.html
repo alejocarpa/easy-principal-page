@@ -70,13 +70,11 @@
         "applicationSubCategory": "ERP",
         "operatingSystem": "Web",
         "url": "https://proyectoeasy.net/easy-business/",
-        "description": "ERP para PYMES con clientes, productos, pedidos, facturas PDF, facturación electrónica DIAN opcional, inventario, cartera, proveedores e informes.",
+        "description": "ERP para PYMES con clientes, productos, pedidos, facturas PDF, inventario, cartera, proveedores e informes. Contabilidad y facturación electrónica DIAN opcionales. $49.000/mes.",
         "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "69000",
-          "highPrice": "219000",
-          "priceCurrency": "COP",
-          "offerCount": "3"
+          "@type": "Offer",
+          "price": "49000",
+          "priceCurrency": "COP"
         },
         "provider": { "@id": "https://proyectoeasy.net/#organization" }
       },
@@ -105,13 +103,11 @@
         "applicationSubCategory": "Point of Sale",
         "operatingSystem": "Web",
         "url": "https://proyectoeasy.net/easy-pos/",
-        "description": "Punto de venta con historial de turnos, inventario, ticket PDF, informes y facturación electrónica DIAN opcional. 15 días gratis del plan Negocio ($49.000/mes).",
+        "description": "Punto de venta con historial de turnos, inventario, ticket PDF, informes. Contabilidad y facturación electrónica DIAN opcionales. 15 días gratis. $49.000/mes.",
         "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "49000",
-          "highPrice": "89000",
-          "priceCurrency": "COP",
-          "offerCount": "2"
+          "@type": "Offer",
+          "price": "49000",
+          "priceCurrency": "COP"
         },
         "provider": { "@id": "https://proyectoeasy.net/#organization" }
       }
@@ -173,7 +169,7 @@
                 <div class="mockup-card"><span class="mockup-card-icon">🧾</span><span>Pedidos (Cotización)</span></div>
                 <div class="mockup-card"><span class="mockup-card-icon">🏢</span><span>Multisucursal (Bodegas)</span></div>
                 <div class="mockup-card"><span class="mockup-card-icon">🤝</span><span>Proveedores</span></div>
-                <div class="mockup-card"><span class="mockup-card-icon">📒</span><span>Contabilidad</span></div>
+                <div class="mockup-card"><span class="mockup-card-icon">📒</span><span>Contabilidad (opcional)</span></div>
                 <div class="mockup-card"><span class="mockup-card-icon">📑</span><span>Reportes contables</span></div>
                 <div class="mockup-card"><span class="mockup-card-icon">👥</span><span>Terceros</span></div>
                 <div class="mockup-card"><span class="mockup-card-icon">🗂️</span><span>Plan de cuentas</span></div>
@@ -280,6 +276,7 @@
               <li><strong>Pedidos</strong> — Registro y seguimiento de pedidos</li>
               <li><strong>Facturas PDF</strong> — Generación de facturas en PDF listas para impresión</li>
               <li><strong>Facturación electrónica</strong> — Emisión DIAN opcional según el volumen de tu negocio</li>
+              <li><strong>Contabilidad</strong> — Módulo opcional: reportes, terceros y plan de cuentas</li>
               <li><strong>Cartera</strong> — Cuentas por cobrar, seguimiento de pagos y cartera vencida</li>
               <li><strong>Inventario</strong> — Stock, entradas, salidas y alertas</li>
               <li><strong>Proveedores</strong> — Gestión de proveedores y compras</li>
@@ -320,6 +317,7 @@
               <li><strong>Ticket en PDF</strong> — Comprobantes listos para imprimir o enviar</li>
               <li><strong>Informe de ventas</strong> — Resumen diario y tendencias de lo vendido</li>
               <li><strong>Facturación electrónica</strong> — Emisión DIAN opcional según el volumen de tu negocio</li>
+              <li><strong>Contabilidad</strong> — Módulo opcional: reportes, terceros y plan de cuentas</li>
             </ul>
             <a href="easy-pos/" class="module-related-link">Conocer EASY POS →</a>
           </article>
@@ -438,8 +436,8 @@
   <section class="section section-pricing" id="precios">
     <div class="section-content">
       <h2 class="section-title">Elige tu solución</h2>
-      <p class="section-desc">Planes por escalones según el módulo que necesites: EASY POS, EASY Business, EASY School, el combo EASY Comercio o el ecosistema completo en EASY Platform.</p>
-      <p class="section-desc">En planes de software: <strong>pagas 10 meses y recibes 12</strong>. La facturación electrónica DIAN es opcional y, si la contratas, se cobra los 12 meses.</p>
+      <p class="section-desc">EASY POS y EASY Business al mismo precio, con los mismos módulos base. Suma Contabilidad o facturación electrónica DIAN solo si las necesitas.</p>
+      <p class="section-desc">En planes de software y Contabilidad: <strong>pagas 10 meses y recibes 12</strong>. La facturación electrónica DIAN, si la contratas, se cobra los 12 meses.</p>
       <div class="easy-carousel" data-easy-carousel>
         <button type="button" class="easy-carousel-nav" aria-label="Solución anterior" data-easy-carousel-prev>
           <span aria-hidden="true">‹</span>
@@ -448,59 +446,57 @@
           <div class="pricing-card">
             <h3>EASY POS</h3>
             <div class="price">
-              <span class="price-custom">Desde $49.000 / mes</span>
+              <span class="price-custom">$49.000 / mes</span>
             </div>
             <p class="price-annual">
               <span class="price-annual-badge">15 días gratis</span>
-              Prueba el plan <strong>Negocio</strong> sin pagar durante 15 días
+              Anual: <strong>$490.000 al año</strong> (2 meses gratis)
             </p>
-            <p class="price-desc">Punto de venta, inventario, tickets PDF, informes y facturación electrónica DIAN opcional</p>
+            <p class="price-desc">Punto de venta con los mismos módulos base que Business</p>
             <ul class="price-features">
-              <li>2 planes: Negocio y Pro</li>
-              <li>Ventas en mostrador y cobro rápido</li>
-              <li>Apertura y cierre de turno con arqueo</li>
-              <li>Inventario conectado al POS (plan Pro)</li>
+              <li>Cobro en mostrador y control de turnos</li>
+              <li>Inventario, cartera, proveedores e informes</li>
+              <li>Ticket / factura en PDF</li>
+              <li>Contabilidad opcional (+$29.000)</li>
               <li>Facturación electrónica DIAN opcional</li>
-              <li>Soporte en español</li>
             </ul>
-            <a href="#planes-pos" class="btn btn-outline">Ver planes</a>
+            <a href="#planes-pos" class="btn btn-outline">Ver plan</a>
           </div>
           <div class="pricing-card">
             <h3>EASY Business</h3>
             <div class="price">
-              <span class="price-custom">Desde $69.000 / mes</span>
+              <span class="price-custom">$49.000 / mes</span>
             </div>
             <p class="price-annual">
-              <span class="price-annual-badge">Ahorra 2 meses pagando anual</span>
-              Planes desde <strong>$690.000 al año</strong> (Emprendedor)
+              <span class="price-annual-badge">Anual</span>
+              <strong>$490.000 al año</strong> (2 meses gratis)
             </p>
-            <p class="price-desc">ERP para PYMES: clientes, productos, pedidos, facturas PDF, facturación electrónica DIAN opcional, inventario, cartera e informes</p>
+            <p class="price-desc">ERP para PYMES con los mismos módulos base que POS</p>
             <ul class="price-features">
-              <li>3 planes: Emprendedor, Pyme y Premium</li>
-              <li>Facturas en PDF listas para impresión</li>
+              <li>Clientes, productos, pedidos e inventario</li>
+              <li>Cartera, proveedores e informes</li>
+              <li>Facturas en PDF</li>
+              <li>Contabilidad opcional (+$29.000)</li>
               <li>Facturación electrónica DIAN opcional</li>
-              <li>Gestión de cartera y cuentas por cobrar</li>
-              <li>Informes de ventas e inventario</li>
-              <li>Soporte en español</li>
             </ul>
-            <a href="#planes-business" class="btn btn-outline">Ver planes</a>
+            <a href="#planes-business" class="btn btn-outline">Ver plan</a>
           </div>
           <div class="pricing-card pricing-card-featured">
             <span class="badge">Oferta estrella</span>
             <h3>EASY Comercio</h3>
             <div class="price">
-              <span class="price-custom">$159.000 / mes</span>
+              <span class="price-custom">$79.000 / mes</span>
             </div>
             <p class="price-annual">
               <span class="price-annual-badge">Anual</span>
-              <strong>$1.590.000 al año</strong> — por separado valdría $218.000 al mes
+              <strong>$790.000 al año</strong> — por separado valdría $98.000 al mes
             </p>
-            <p class="price-desc">EASY Business Pyme + EASY POS Pro en una sola plataforma, un solo login y un solo precio.</p>
+            <p class="price-desc">EASY Business + EASY POS en una sola plataforma, un solo login y un solo precio.</p>
             <ul class="price-features">
               <li>Vende en mostrador (POS) y por pedido (Business) con el mismo inventario</li>
               <li>Cartera, proveedores e informes unificados</li>
-              <li>5 usuarios incluidos</li>
-              <li>Ahorras $59.000 al mes ($708.000 al año)</li>
+              <li>Ahorras $19.000 al mes ($228.000 al año)</li>
+              <li>Contabilidad y FE DIAN opcionales</li>
               <li>Soporte prioritario</li>
             </ul>
             <a href="#contacto" class="btn btn-primary">Contratar combo</a>
@@ -570,54 +566,34 @@
       </div>
 
       <div class="school-pricing-block" id="planes-pos">
-        <h3 class="section-title">Planes EASY POS</h3>
-        <p class="section-desc">Prueba 15 días gratis el plan Negocio ($49.000). Pago anual del software: pagas 10 meses y recibes 12. Facturación electrónica DIAN opcional.</p>
+        <h3 class="section-title">Plan EASY POS</h3>
+        <p class="section-desc">Mismo precio y mismos módulos base que EASY Business. 15 días gratis. Contabilidad y FE DIAN opcionales.</p>
         <div class="easy-carousel" data-easy-carousel>
           <button type="button" class="easy-carousel-nav" aria-label="Plan POS anterior" data-easy-carousel-prev>
             <span aria-hidden="true">‹</span>
           </button>
-          <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes EASY POS">
+          <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Plan EASY POS">
             <div class="pricing-card pricing-card-featured">
-              <span class="badge">Popular</span>
-              <h3>POS Negocio</h3>
+              <span class="badge">15 días gratis</span>
+              <h3>EASY POS</h3>
               <div class="price">
                 <span class="price-custom">$49.000 / mes</span>
               </div>
               <p class="price-annual">
-                <span class="price-annual-badge">15 días gratis</span>
-                Anual: <strong>$490.000 al año</strong> (2 meses gratis)
+                <span class="price-annual-badge">Anual</span>
+                <strong>$490.000 al año</strong> (2 meses gratis)
               </p>
-              <p class="price-desc">Ventas ilimitadas, 1 caja, 2 usuarios</p>
+              <p class="price-desc">Punto de venta + módulos comerciales completos</p>
               <ul class="price-features">
-                <li>15 días gratis para probar el plan completo</li>
-                <li>Descuentos y cobro rápido</li>
-                <li>Apertura y cierre de turno con arqueo</li>
-                <li>Historial completo de turnos y movimientos</li>
-                <li>Informe diario de ventas</li>
+                <li>Cobro en mostrador, descuentos y turnos de caja</li>
+                <li>Clientes, productos, inventario y proveedores</li>
+                <li>Cartera, pedidos e informes de ventas</li>
+                <li>Ticket / factura en PDF</li>
+                <li>Multisucursal / bodegas</li>
+                <li>Contabilidad opcional (+$29.000 / mes)</li>
                 <li>Facturación electrónica DIAN opcional</li>
-                <li>Soporte en español</li>
               </ul>
               <a href="#contacto" class="btn btn-primary">Probar 15 días gratis</a>
-            </div>
-            <div class="pricing-card">
-              <h3>POS Pro</h3>
-              <div class="price">
-                <span class="price-custom">$89.000 / mes</span>
-              </div>
-              <p class="price-annual">
-                <span class="price-annual-badge">Anual</span>
-                <strong>$890.000 al año</strong> (2 meses gratis)
-              </p>
-              <p class="price-desc">Hasta 3 cajas, 5 usuarios</p>
-              <ul class="price-features">
-                <li>Todo lo del plan Negocio</li>
-                <li>Inventario conectado al POS con descuento automático de stock</li>
-                <li>Cierre de caja por cajero y reporte de diferencias</li>
-                <li>Informes de productos más vendidos y horas pico</li>
-                <li>Facturación electrónica DIAN opcional</li>
-                <li>Soporte prioritario</li>
-              </ul>
-              <a href="#contacto" class="btn btn-outline">Consultar</a>
             </div>
           </div>
           <button type="button" class="easy-carousel-nav" aria-label="Plan POS siguiente" data-easy-carousel-next>
@@ -627,76 +603,34 @@
       </div>
 
       <div class="school-pricing-block" id="planes-business">
-        <h3 class="section-title">Planes EASY Business</h3>
-        <p class="section-desc">Elige el plan según usuarios y módulos que necesita tu negocio. Pago anual del software: pagas 10 meses y recibes 12. Facturación electrónica DIAN opcional.</p>
+        <h3 class="section-title">Plan EASY Business</h3>
+        <p class="section-desc">Mismo precio y mismos módulos base que EASY POS. Contabilidad y FE DIAN opcionales.</p>
         <div class="easy-carousel" data-easy-carousel>
           <button type="button" class="easy-carousel-nav" aria-label="Plan Business anterior" data-easy-carousel-prev>
             <span aria-hidden="true">‹</span>
           </button>
-          <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Planes EASY Business">
-            <div class="pricing-card">
-              <h3>Emprendedor</h3>
-              <div class="price">
-                <span class="price-custom">$69.000 / mes</span>
-              </div>
-              <p class="price-annual">
-                <span class="price-annual-badge">Anual</span>
-                <strong>$690.000 al año</strong> (2 meses gratis)
-              </p>
-              <p class="price-desc">1 usuario. Para el negocio que hoy factura en cuaderno o Excel.</p>
-              <ul class="price-features">
-                <li>Clientes: ficha, historial y seguimiento</li>
-                <li>Productos: catálogo, precios y categorías</li>
-                <li>Pedidos: registro y seguimiento</li>
-                <li>Facturas en PDF listas para impresión</li>
-                <li>Facturación electrónica DIAN opcional</li>
-                <li>Informe básico de ventas</li>
-                <li>Soporte en español por WhatsApp</li>
-              </ul>
-              <a href="#contacto" class="btn btn-outline">Consultar</a>
-            </div>
+          <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Plan EASY Business">
             <div class="pricing-card pricing-card-featured">
               <span class="badge">Popular</span>
-              <h3>Pyme</h3>
+              <h3>EASY Business</h3>
               <div class="price">
-                <span class="price-custom">$129.000 / mes</span>
+                <span class="price-custom">$49.000 / mes</span>
               </div>
               <p class="price-annual">
                 <span class="price-annual-badge">Anual</span>
-                <strong>$1.290.000 al año</strong> (2 meses gratis)
+                <strong>$490.000 al año</strong> (2 meses gratis)
               </p>
-              <p class="price-desc">3 usuarios. Para el negocio que ya vende y necesita control de plata y stock.</p>
+              <p class="price-desc">ERP comercial con los mismos módulos base que POS</p>
               <ul class="price-features">
-                <li>Todo lo del plan Emprendedor</li>
-                <li>Inventario: stock, entradas, salidas y alertas de mínimos</li>
-                <li>Cartera: cuentas por cobrar, pagos y cartera vencida</li>
-                <li>Proveedores: gestión de proveedores y compras</li>
-                <li>Informes de ventas e inventario</li>
+                <li>Clientes, productos, pedidos e inventario</li>
+                <li>Cartera, proveedores e informes</li>
+                <li>Facturas en PDF</li>
+                <li>Financiación y multisucursal / bodegas</li>
+                <li>Contabilidad opcional (+$29.000 / mes)</li>
                 <li>Facturación electrónica DIAN opcional</li>
-                <li>Soporte prioritario</li>
+                <li>Soporte en español</li>
               </ul>
               <a href="#contacto" class="btn btn-primary">Consultar</a>
-            </div>
-            <div class="pricing-card">
-              <h3>Premium</h3>
-              <div class="price">
-                <span class="price-custom">$219.000 / mes</span>
-              </div>
-              <p class="price-annual">
-                <span class="price-annual-badge">Anual</span>
-                <strong>$2.190.000 al año</strong> (2 meses gratis)
-              </p>
-              <p class="price-desc">8 usuarios. Para negocios con varias sucursales o bodegas.</p>
-              <ul class="price-features">
-                <li>Todo lo del plan Pyme</li>
-                <li>Multi-bodega y multi-sucursal</li>
-                <li>Informes gerenciales y dashboard de tendencias</li>
-                <li>Roles y permisos por usuario</li>
-                <li>Capacitación incluida (2 sesiones)</li>
-                <li>Facturación electrónica DIAN opcional</li>
-                <li>Soporte prioritario con SLA</li>
-              </ul>
-              <a href="#contacto" class="btn btn-outline">Consultar</a>
             </div>
           </div>
           <button type="button" class="easy-carousel-nav" aria-label="Plan Business siguiente" data-easy-carousel-next>
@@ -714,7 +648,7 @@
           </button>
           <div class="easy-carousel-track" data-easy-carousel-track tabindex="0" role="region" aria-label="Paquetes de facturación electrónica">
             <div class="pricing-card">
-              <h3>FE 120</h3>
+              <h3>FE 300</h3>
               <div class="price">
                 <span class="price-custom">$35.000 / mes</span>
               </div>
@@ -722,17 +656,17 @@
                 <span class="price-annual-badge">Anual ×12</span>
                 <strong>$420.000 al año</strong>
               </p>
-              <p class="price-desc">Hasta 120 emisiones electrónicas al mes</p>
+              <p class="price-desc">Hasta 300 emisiones electrónicas al mes</p>
               <ul class="price-features">
                 <li>Add-on para Business o POS</li>
                 <li>Emisión electrónica DIAN</li>
-                <li>Ideal para bajo volumen de facturas</li>
+                <li>Ideal para bajo / medio volumen</li>
               </ul>
               <a href="#contacto" class="btn btn-outline">Consultar</a>
             </div>
             <div class="pricing-card pricing-card-featured">
               <span class="badge">Recomendado</span>
-              <h3>FE 240</h3>
+              <h3>FE 600</h3>
               <div class="price">
                 <span class="price-custom">$45.000 / mes</span>
               </div>
@@ -740,7 +674,7 @@
                 <span class="price-annual-badge">Anual ×12</span>
                 <strong>$540.000 al año</strong>
               </p>
-              <p class="price-desc">Hasta 240 emisiones electrónicas al mes</p>
+              <p class="price-desc">Hasta 600 emisiones electrónicas al mes</p>
               <ul class="price-features">
                 <li>Add-on para Business o POS</li>
                 <li>Emisión electrónica DIAN</li>
@@ -749,7 +683,7 @@
               <a href="#contacto" class="btn btn-primary">Consultar</a>
             </div>
             <div class="pricing-card">
-              <h3>FE 360</h3>
+              <h3>FE 1000</h3>
               <div class="price">
                 <span class="price-custom">$59.000 / mes</span>
               </div>
@@ -757,11 +691,28 @@
                 <span class="price-annual-badge">Anual ×12</span>
                 <strong>$708.000 al año</strong>
               </p>
-              <p class="price-desc">Hasta 360 emisiones electrónicas al mes</p>
+              <p class="price-desc">Hasta 1.000 emisiones electrónicas al mes</p>
               <ul class="price-features">
                 <li>Add-on para Business o POS</li>
                 <li>Emisión electrónica DIAN</li>
-                <li>Para negocios con alto volumen</li>
+                <li>Para alto volumen de facturas</li>
+              </ul>
+              <a href="#contacto" class="btn btn-outline">Consultar</a>
+            </div>
+            <div class="pricing-card">
+              <h3>FE 2000</h3>
+              <div class="price">
+                <span class="price-custom">$75.000 / mes</span>
+              </div>
+              <p class="price-annual">
+                <span class="price-annual-badge">Anual ×12</span>
+                <strong>$900.000 al año</strong>
+              </p>
+              <p class="price-desc">Hasta 2.000 emisiones electrónicas al mes</p>
+              <ul class="price-features">
+                <li>Add-on para Business o POS</li>
+                <li>Emisión electrónica DIAN</li>
+                <li>Para operaciones de muy alto volumen</li>
               </ul>
               <a href="#contacto" class="btn btn-outline">Consultar</a>
             </div>
@@ -842,21 +793,22 @@
 
       <div class="school-pricing-block">
         <div class="school-pricing-extras">
-          <h4>Extras opcionales (aplican a todos los productos)</h4>
+          <h4>Extras opcionales</h4>
           <ul>
             <li><strong>Implementación y migración de datos:</strong> $150.000 única vez (gratis pagando anual)</li>
             <li><strong>Capacitación adicional (grupo):</strong> $80.000 por sesión</li>
-            <li><strong>Agregar módulo POS a un plan Business existente:</strong> +$49.000 / mes</li>
-            <li><strong>Facturación electrónica DIAN:</strong> desde $35.000 / mes (FE 120, 240 o 360) — ver <a href="#planes-fe">paquetes</a></li>
+            <li><strong>Módulo Contabilidad</strong> (Business o POS): +$29.000 / mes · $290.000 al año</li>
+            <li><strong>Combo EASY Comercio</strong> (Business + POS): $79.000 / mes · $790.000 al año</li>
+            <li><strong>Facturación electrónica DIAN:</strong> desde $35.000 / mes (FE 300, 600, 1000 o 2000) — ver <a href="#planes-fe">paquetes</a></li>
           </ul>
         </div>
         <div class="school-pricing-extras">
-          <h4>Sobre la facturación electrónica DIAN</h4>
+          <h4>Sobre Contabilidad y facturación electrónica</h4>
           <ul>
-            <li>Es un <strong>add-on opcional</strong> para EASY Business y EASY POS: si no la necesitas, contratas solo el software.</li>
-            <li>Los planes base incluyen <strong>facturas en PDF</strong> listas para imprimir.</li>
+            <li><strong>Contabilidad</strong> es un add-on opcional (+$29.000): reportes contables, terceros y plan de cuentas.</li>
+            <li><strong>FE DIAN</strong> es un add-on opcional para Business y POS; los planes base incluyen facturas/tickets en PDF.</li>
             <li>El anual de FE se cobra <strong>los 12 meses</strong> (no aplica “pagas 10, llevas 12”).</li>
-            <li>Si te pasas del cupo mensual, se cotizan emisiones adicionales.</li>
+            <li>Si te pasas del cupo mensual de FE, se cotizan emisiones adicionales.</li>
           </ul>
         </div>
       </div>

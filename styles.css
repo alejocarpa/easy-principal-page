@@ -1533,6 +1533,11 @@ a {
   min-width: 0;
 }
 
+/* Un solo plan (POS / Business): centra la tarjeta en el carrusel */
+.easy-carousel-track:has(> :only-child) {
+  justify-content: center;
+}
+
 .easy-carousel-track::-webkit-scrollbar {
   display: none;
 }
